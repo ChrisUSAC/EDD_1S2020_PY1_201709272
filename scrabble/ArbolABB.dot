@@ -1,0 +1,18 @@
+digraph ArbolBB{ 
+
+rankdir=TB;
+
+node [shape = record];
+N_Daniel[label ="<HI>|Daniel|<HD>"]; 
+N_Carmen[label ="<HI>|Carmen"]; 
+N_Aymme[label ="Aymme|<HD>"]; 
+N_Berceli[label ="Berceli"]; 
+N_Aymme:HD -> N_Berceli
+N_Carmen:HI -> N_Aymme
+N_Daniel:HI -> N_Carmen
+N_Luis[label ="<HI>|Luis"]; 
+N_Gabriela[label ="Gabriela"]; 
+N_Luis:HI -> N_Gabriela
+N_Daniel:HD -> N_Luis
+
+}

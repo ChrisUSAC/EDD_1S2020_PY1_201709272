@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1584483088 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1584756343 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
 
 1584755698 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
@@ -13,4 +13,26 @@
 
 1584755425 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodocola.cpp
 	"NodoCola.h"
+
+1584756871 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\lista.cpp
+	"Lista.h"
+
+1584756871 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\lista.h
+
+1585115742 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodoabb.cpp
+	"nodoABB.h"
+
+1585115707 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodoabb.h
+	<string.h>
+	<iostream>
+
+1585115752 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\arbolabb.cpp
+	"ArbolABB.h"
+
+1585113682 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\arbolabb.h
+	"nodoABB.h"
+	<iostream>
+	<string.h>
+	<string>
+	<fstream>
 
