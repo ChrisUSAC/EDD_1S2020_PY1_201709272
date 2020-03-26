@@ -1,25 +1,23 @@
 #include <iostream>
-#include "ArbolABB.h"
-#include "nodoABB.h"
+#include "Lista.h"
+#include "NodoLista.h"
+
 using namespace std;
 
 int main()
 {
-    ArbolABB* n = new  ArbolABB();
-    nodoABB* nu = new nodoABB("Daniel");
-    nodoABB* a = new nodoABB("Carmen");
-    nodoABB* b = new nodoABB("Luis");
-    nodoABB* c = new nodoABB("Aymme");
-    nodoABB* d = new nodoABB("Berceli");
-    nodoABB* e = new nodoABB("Gabriela");
+    Lista *a = new Lista();
+    a->insertar("a",100);
+    a->insertar("d",0);
+    a->insertar("f",2);
+    a->insertar("Luis",15);
+    a->insertar("Mario",10);
+    a->insertar("Julio",40);
+    a->insertar("Pedro",17);
+    a->insertar("Martin",18);
+    a->insertar("Chris",3);
+    a->graficar();
 
-    n->add(nu);
-    n->add(a);
-    n->add(b);
-    n->add(c);
-    n->add(d);
-    n->add(e);
-    n->graph();
 
     return 0;
 }

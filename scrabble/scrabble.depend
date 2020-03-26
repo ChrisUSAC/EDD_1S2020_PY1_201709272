@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1584756343 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585182751 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
+	"Lista.h"
+	"NodoLista.h"
 
 1584755698 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
@@ -14,10 +16,14 @@
 1584755425 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodocola.cpp
 	"NodoCola.h"
 
-1584756871 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\lista.cpp
+1585182627 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\lista.cpp
 	"Lista.h"
 
-1584756871 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\lista.h
+1585180461 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\lista.h
+	"NodoLista.h"
+	<iostream>
+	<cstring>
+	<fstream>
 
 1585115742 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodoabb.cpp
 	"nodoABB.h"
@@ -35,4 +41,10 @@
 	<string.h>
 	<string>
 	<fstream>
+
+1585178946 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolista.h
+	<iostream>
+
+1585179259 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolista.cpp
+	"NodoLista.h"
 
