@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1585282386 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585289176 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
+	"ListaDoble.h"
 
 1584755698 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
@@ -77,4 +78,19 @@
 1585285095 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblec.h
 	"NodoListaDobleC.h"
 	<iostream>
+
+1585288964 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoble.cpp
+	"ListaDoble.h"
+
+1585288648 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoble.h
+	"NodoListaDoble.h"
+	<iostream>
+	<fstream>
+	<cstring>
+
+1585288146 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoble.h
+	<iostream>
+
+1585288215 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoble.cpp
+	"NodoListaDoble.h"
 

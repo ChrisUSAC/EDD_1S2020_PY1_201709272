@@ -1,0 +1,17 @@
+digraph G{ 
+rankdir=LR 
+node[ shape = box] 
+0[label = "f" width=2.0 ]; 
+1[label = "b" width=2.0 ]; 
+2[label = "d" width=2.0 ]; 
+3[label = "w" width=2.0 ]; 
+4[label = "e" width=2.0 ]; 
+0 -> 1[dir = back]; 
+0 -> 1 
+1 -> 2[dir = back]; 
+1 -> 2 
+2 -> 3[dir = back]; 
+2 -> 3 
+3 -> 4[dir = back]; 
+3 -> 4 
+}

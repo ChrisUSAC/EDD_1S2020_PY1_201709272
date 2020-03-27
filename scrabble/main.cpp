@@ -1,17 +1,17 @@
 #include <iostream>
-#include "ListaDobleC.h"
+#include "ListaDoble.h"
 
 using namespace std;
 
 int main()
 {
-    ListaDobleC* n = new ListaDobleC();
-    n->insertarFinal("Fos");
-    n->insertarFinal("Mario");
-    n->insertarFinal("Chris");
-    n->insertarFinal("Carlos");
-    n->insertarFinal("Juan");
-
+    ListaDoble* n = new ListaDoble();
+    n->insertarFinal('f',1);
+    n->insertarFinal('b',2);
+    n->insertarFinal('d',3);
+    n->insertarFinal('w',4);
+    n->insertarFinal('e',5);
     n->imprimir();
+    n->graficar();
     return 0;
 }
