@@ -37,13 +37,19 @@
 		<Unit filename="include/ArbolABB.h" />
 		<Unit filename="include/Cola.h" />
 		<Unit filename="include/Lista.h" />
+		<Unit filename="include/Matriz.h" />
 		<Unit filename="include/NodoCola.h" />
+		<Unit filename="include/NodoLista.h" />
+		<Unit filename="include/NodoMatriz.h" />
 		<Unit filename="include/nodoABB.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ArbolABB.cpp" />
 		<Unit filename="src/Cola.cpp" />
 		<Unit filename="src/Lista.cpp" />
+		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/NodoCola.cpp" />
+		<Unit filename="src/NodoLista.cpp" />
+		<Unit filename="src/NodoMatriz.cpp" />
 		<Unit filename="src/nodoABB.cpp" />
 		<Extensions>
 			<code_completion />

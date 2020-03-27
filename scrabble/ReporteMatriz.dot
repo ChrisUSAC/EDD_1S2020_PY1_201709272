@@ -1,0 +1,26 @@
+digraph M{ 
+node[ shape = box] 
+Raiz[label = "Raiz", width=1.5, group = 1]; 
+ 
+f0[label = "1" width=2.0 , group = 1 ]; 
+c0[label = "1" width=2.0 , group = 2 ]; 
+c1[label = "3" width=2.0 , group = 3 ]; 
+c0 -> c1[dir = back]; 
+c0 -> c1 
+ Raiz -> f0 [dir = back];  
+ Raiz -> f0 ; 
+ Raiz -> c0 [dir = back]; 
+ Raiz -> c0 ; 
+{rank = same;Raiz;c0;c1;} 
+n0[label = "d" width = 1.5, group =2]; 
+n1[label = "d" width = 1.5, group =3]; 
+c0 -> n0 [dir = back];  
+c0 -> n0
+c1 -> n1 [dir = back];  
+c1 -> n1
+f0 -> n0 [dir = back];  
+f0 -> n0
+n0 -> n1 [dir = back];  
+n0 -> n1
+{rank = same;f0;n0;n1;} 
+}
