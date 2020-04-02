@@ -1,13 +1,12 @@
 digraph G{ 
 rankdir=LR 
 node[ shape = box] 
-0[label = "Chris" width=2.0 ]; 
-1[label = "Maria" width=2.0 ]; 
-2[label = "Juan" width=2.0 ]; 
-3[label = "Pedro" width=2.0 ]; 
-4[label = "Maro" width=2.0 ]; 
-5[label = "D" width=2.0 ]; 
-6[label = "Ultimo" width=2.0 ]; 
+0[label = "hola" width=2.0 ]; 
+1[label = "como" width=2.0 ]; 
+2[label = "estas" width=2.0 ]; 
+3[label = "el" width=2.0 ]; 
+4[label = "dia" width=2.0 ]; 
+5[label = "de" width=2.0 ]; 
 0 -> 1[dir = back]; 
 0 -> 1 
 1 -> 2[dir = back]; 
@@ -18,8 +17,6 @@ node[ shape = box]
 3 -> 4 
 4 -> 5[dir = back]; 
 4 -> 5 
-5 -> 6[dir = back]; 
-5 -> 6 
-0 -> 6[dir = back]; 
-0 -> 6 
+0 -> 5[dir = back]; 
+0 -> 5 
 }

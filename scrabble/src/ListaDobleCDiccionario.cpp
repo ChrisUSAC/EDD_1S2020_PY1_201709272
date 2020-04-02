@@ -1,30 +1,31 @@
-#include "ListaDobleC.h"
-
+#include "ListaDobleCDiccionario.h"
 #include<iostream>
 using namespace std;
 //------------------------------------------------------------------------------------------------------
 //metodo constructor
-ListaDobleC::ListaDobleC()
+ListaDobleCDiccionario::ListaDobleCDiccionario()
 {
     this->primero = 0;
     this->ultimo = 0;
     this->tam  = 0;
+    this->id = 0;
+
 }
 //------------------------------------------------------------------------------------------------------
 //metodo destructor
-ListaDobleC::~ListaDobleC()
+ListaDobleCDiccionario::~ListaDobleCDiccionario()
 {
-    //dtor
+
 }
 //------------------------------------------------------------------------------------------------------
-//metodo que informa si la lista esta vacia
-bool ListaDobleC::estaVacia()
+//metodo destructor
+bool ListaDobleCDiccionario::estaVacia()
 {
     return this->primero==0;
 }
 //------------------------------------------------------------------------------------------------------
 //metodo para imprimir en consola la lista circula de inicio a fin
-void ListaDobleC::imprimir()
+void ListaDobleCDiccionario::imprimir()
 {
     if(estaVacia())
     {
@@ -40,7 +41,7 @@ void ListaDobleC::imprimir()
         //ciclo de impresion en consola
         while(indice < this->tam)
         {
-            cout<<"aux->nombre: "<<aux->nombre<<endl;
+            cout<<"aux->palabra: "<<aux->palabraDiccionario<<endl;
             aux =aux->sig;
             indice++;
 
@@ -50,10 +51,10 @@ void ListaDobleC::imprimir()
 }
 //------------------------------------------------------------------------------------------------------
 //metodo para insertar al final el nuevo nodo
-void ListaDobleC::insertarFinal(string nombre)
+void ListaDobleCDiccionario::insertarFinal(string palabra)
 {
     //se instancia el nodo a insertar
-    NodoListaDobleC* n = new NodoListaDobleC(nombre);
+    NodoListaDobleC* n = new NodoListaDobleC(palabra,this->id++);
     //es evalua si la lista esta vacia
     if(estaVacia())
     {
@@ -78,7 +79,7 @@ void ListaDobleC::insertarFinal(string nombre)
     this->tam++;
 }
 //------------------------------------------------------------------------------------------------------
-void ListaDobleC::graficar()
+void ListaDobleCDiccionario::graficar()
 {
     if(this->primero!=0)
     {
@@ -86,16 +87,15 @@ void ListaDobleC::graficar()
     }
     else
     {
-    cout<<"Error lista vacia no se puede graficar"<<endl;
+    cout<<"Error lista diccionario no se puede graficar, esta vacia"<<endl;
     }
-
 }
-//------------------------------------------------------------------------------------------------------
-void ListaDobleC::escribir()
+
+void ListaDobleCDiccionario::escribir()
 {
     ofstream archivo;
 
-    archivo.open("ReporteJugadores.dot",ios::out); // abriendo o creando el archivo
+    archivo.open("ReporteDiccionario.dot",ios::out); // abriendo o creando el archivo
 
     //validar que se creara correctamente
     if(archivo.fail())
@@ -118,7 +118,7 @@ void ListaDobleC::escribir()
             while(indice < this->tam)
             {
                 string identificadorr = std::to_string(id);
-                archivo<<identificadorr+"[label = " + "\"" + aux->nombre + "\"" + " width=2.0 ];" + " \n";
+                archivo<<identificadorr+"[label = " + "\"" + aux->palabraDiccionario + "\"" + " width=2.0 ];" + " \n";
                 aux = aux->sig;
                 indice +=1;
                 id++;
@@ -144,7 +144,6 @@ void ListaDobleC::escribir()
 
     }
     archivo.close();//se cierra el archivo
-    system("dot -Tpng ReporteJugadores.dot -o ReporteJugadores.png"); //Create
-             system("ReporteJugadores.png"); //Open
+    system("dot -Tpng ReporteDiccionario.dot -o ReporteDiccionario.png"); //Create
+             system("ReporteDiccionario.png"); //Open
 }
-

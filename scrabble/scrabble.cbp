@@ -39,6 +39,7 @@
 		<Unit filename="include/Lista.h" />
 		<Unit filename="include/ListaDoble.h" />
 		<Unit filename="include/ListaDobleC.h" />
+		<Unit filename="include/ListaDobleCDiccionario.h" />
 		<Unit filename="include/Matriz.h" />
 		<Unit filename="include/NodoCola.h" />
 		<Unit filename="include/NodoLista.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="src/Lista.cpp" />
 		<Unit filename="src/ListaDoble.cpp" />
 		<Unit filename="src/ListaDobleC.cpp" />
+		<Unit filename="src/ListaDobleCDiccionario.cpp" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/NodoCola.cpp" />
 		<Unit filename="src/NodoLista.cpp" />

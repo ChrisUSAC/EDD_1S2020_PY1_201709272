@@ -8,12 +8,17 @@ class NodoListaDobleC
     public:
         //metodo constructor
         NodoListaDobleC(string nombre);
+        NodoListaDobleC(string palabraDiccionario,int id);
 
         //metodo destructor
         virtual ~NodoListaDobleC();
         NodoListaDobleC *sig; //puntero que hace referencia al siguiente nodo
         NodoListaDobleC *ant; // puntero que hace referencia al anterior nodo
+
         string nombre;
+
+        string palabraDiccionario; // guarda las palabras del diccionario
+        int id; // se le asigna un id a la palabra
 
 
     protected:

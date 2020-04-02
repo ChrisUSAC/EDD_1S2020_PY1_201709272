@@ -1,17 +1,17 @@
 #include <iostream>
-#include "ListaDobleC.h"
+#include "ListaDobleCDiccionario.h"
 using namespace std;
 
 int main()
 {
-    ListaDobleC * n = new ListaDobleC();
-    n->insertarFinal("Chris");
-    n->insertarFinal("Maria");
-    n->insertarFinal("Juan");
-    n->insertarFinal("Pedro");
-    n->insertarFinal("Maro");
-    n->insertarFinal("D");
-    n->insertarFinal("Ultimo");
+    ListaDobleCDiccionario* n = new ListaDobleCDiccionario();
+    n->insertarFinal("hola");
+    n->insertarFinal("como");
+    n->insertarFinal("estas");
+    n->insertarFinal("el");
+    n->insertarFinal("dia");
+    n->insertarFinal("de");
+    n->imprimir();
     n->graficar();
     return 0;
 }

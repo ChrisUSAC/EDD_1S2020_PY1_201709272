@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1585869080 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585870390 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
-	"ListaDobleC.h"
+	"ListaDobleCDiccionario.h"
 
 1584755698 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
@@ -65,13 +65,13 @@
 1585268459 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodomatriz.cpp
 	"NodoMatriz.h"
 
-1585284581 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoblec.cpp
+1585869609 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoblec.cpp
 	"NodoListaDobleC.h"
 
-1585284527 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoblec.h
+1585869540 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoblec.h
 	<iostream>
 
-1585869025 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblec.cpp
+1585870172 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblec.cpp
 	"ListaDobleC.h"
 	<iostream>
 
@@ -95,4 +95,14 @@
 
 1585288215 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoble.cpp
 	"NodoListaDoble.h"
+
+1585870127 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblecdiccionario.cpp
+	"ListaDobleCDiccionario.h"
+	<iostream>
+
+1585869795 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblecdiccionario.h
+	"NodoListaDobleC.h"
+	<iostream>
+	<fstream>
+	<cstring>
 
