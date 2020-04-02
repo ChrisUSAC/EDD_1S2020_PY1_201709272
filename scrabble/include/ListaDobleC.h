@@ -3,6 +3,8 @@
 
 #include"NodoListaDobleC.h"//se incluye el nodo
 #include <iostream>
+#include <fstream>
+#include <cstring> //biblioteca para comparar strings
 using namespace std;
 
 class ListaDobleC
@@ -20,6 +22,9 @@ class ListaDobleC
         NodoListaDobleC* primero; // puntero que indica cual es el primer nodo de la lista
         NodoListaDobleC* ultimo; // puntero que indica cual es el ultimo nodo en la lista
         int tam; // entero que indica cuantos nodos tiene la lista, es decir el tamano.
+
+        void graficar(); // metodo que realiza el reporte graphiz
+        void escribir(); // escribir el archivo de texto
 
     protected:
 

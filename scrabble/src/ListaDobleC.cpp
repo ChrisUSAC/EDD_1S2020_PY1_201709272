@@ -77,3 +77,74 @@ void ListaDobleC::insertarFinal(string nombre)
     //se aumenta el tamano de la lista
     this->tam++;
 }
+//------------------------------------------------------------------------------------------------------
+void ListaDobleC::graficar()
+{
+    if(this->primero!=0)
+    {
+       escribir();
+    }
+    else
+    {
+    cout<<"Error lista vacia no se puede graficar"<<endl;
+    }
+
+}
+//------------------------------------------------------------------------------------------------------
+void ListaDobleC::escribir()
+{
+    ofstream archivo;
+
+    archivo.open("ReporteDiccionario.dot",ios::out); // abriendo o creando el archivo
+
+    //validar que se creara correctamente
+    if(archivo.fail())
+    {
+            cout<<"no se pudo abrir el archivo"<<endl;
+
+    }
+    else
+    {
+
+        //escribir sintaxis dot para la imagen
+            archivo<<"digraph G{ \n";
+            archivo<<"rankdir=LR \n";
+            archivo<<"node[ shape = box] \n";
+
+            NodoListaDobleC* aux = this->primero;
+
+            int indice=0;
+            int id=0;
+            while(indice < this->tam)
+            {
+                string identificadorr = std::to_string(id);
+                archivo<<identificadorr+"[label = " + "\"" + aux->nombre + "\"" + " width=2.0 ];" + " \n";
+                aux = aux->sig;
+                indice +=1;
+                id++;
+            }
+
+            int condicionSalida = id;
+            int id2=0;
+            NodoListaDobleC* aux2 = this->primero;
+            while(id2 < condicionSalida-1 )
+            {
+                string identificadorr = std::to_string(id2);
+                string identificadorr2 = std::to_string(id2+1);
+                archivo<<identificadorr+" -> "+ identificadorr2 +"[dir = back];"+" \n";
+                archivo<<identificadorr+" -> "+ identificadorr2 +" \n";
+                aux2 = aux2->sig;
+                id2++;
+            }
+            string t = std::to_string(condicionSalida-1);
+            archivo<<"0 -> "+t+"[dir = back];"+" \n";
+            archivo<<"0 -> "+t+" \n";
+
+            archivo<<"}";
+
+    }
+    archivo.close();//se cierra el archivo
+    system("dot -Tpng ReporteDiccionario.dot -o ReporteDiccionario.png"); //Create
+             system("ReporteDiccionario.png"); //Open
+}
+
