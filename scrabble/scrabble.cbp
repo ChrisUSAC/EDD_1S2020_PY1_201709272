@@ -35,6 +35,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/ArbolABB.h" />
+		<Unit filename="include/Archivo.h" />
 		<Unit filename="include/Cola.h" />
 		<Unit filename="include/Lista.h" />
 		<Unit filename="include/ListaDoble.h" />
@@ -49,6 +50,7 @@
 		<Unit filename="include/nodoABB.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ArbolABB.cpp" />
+		<Unit filename="src/Archivo.cpp" />
 		<Unit filename="src/Cola.cpp" />
 		<Unit filename="src/Lista.cpp" />
 		<Unit filename="src/ListaDoble.cpp" />

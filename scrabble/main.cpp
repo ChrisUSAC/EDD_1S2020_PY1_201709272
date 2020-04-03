@@ -1,13 +1,11 @@
 #include <iostream>
-#include "Cola.h"
+#include "Archivo.h"
 using namespace std;
 
 int main()
 {
-    Cola *n = new Cola();
-    n->imprimir();
-    n->graficar();
-    cout<<to_string(n->tamano);
+    Archivo* n = new Archivo();
+    n->leer("b.json");
 
     return 0;
 }
