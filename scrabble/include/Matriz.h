@@ -26,7 +26,7 @@ class Matriz
         NodoMatriz* buscarFila(string fila); // metodo que recorre las filas y verifica si  existe
         NodoMatriz* buscarCol(string col);// metodo que recorre las columnas y verifica si existe
 
-        void insertarElemento(string fila,string col,int punteo, char letra); //metodo de insercion de NodoMatriz
+        void insertarElemento(string fila,string col,int punteo, char letra,string dobleotriple); //metodo de insercion de NodoMatriz
 
         //inserta los year en orden, nuevo es el nodo a insertar, cabeza_col es nodo referencia donde empezar
         NodoMatriz* insertar_ordenado_columna(NodoMatriz* nuevo,NodoMatriz* cabeza_col);

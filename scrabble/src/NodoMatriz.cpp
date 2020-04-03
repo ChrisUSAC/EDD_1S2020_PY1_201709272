@@ -19,13 +19,14 @@ NodoMatriz::NodoMatriz(string col,string fila,string mensaje)
     this->mensaje = mensaje;
     this->col = col;
     this->fila = fila;
+    this->dobleotriple = "f";
 
 
 
 }
 //------------------------------------------------------------------------------------------------------
 //metodo constructor para el nodo que almacena letras del juego en tablero
-NodoMatriz::NodoMatriz(string fila,string col,int punteo,char letra)
+NodoMatriz::NodoMatriz(string fila,string col,int punteo,char letra,string dobleotriple)
 {
     //inicializar puntero en nulo
     this->sig = 0;
@@ -38,6 +39,7 @@ NodoMatriz::NodoMatriz(string fila,string col,int punteo,char letra)
     this->col = col;
     this->punteo = punteo;
     this->letra = letra;
+    this->dobleotriple = dobleotriple;
 
 }
 //------------------------------------------------------------------------------------------------------

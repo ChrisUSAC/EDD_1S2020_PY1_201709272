@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1585896557 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585908747 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
-	"Archivo.h"
+	"Menu.h"
+	"Matriz.h"
 
 1585889304 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
@@ -52,22 +53,22 @@
 1585179259 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolista.cpp
 	"NodoLista.h"
 
-1585282231 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
+1585908461 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
 	"Matriz.h"
 
-1585271131 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\matriz.h
+1585905354 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\matriz.h
 	"NodoMatriz.h"
 	"Lista.h"
 	"string"
 	"cstring"
 	<fstream>
 
-1585268365 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodomatriz.h
+1585905332 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodomatriz.h
 	<string>
 	"NodoLista.h"
 	"Lista.h"
 
-1585268459 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodomatriz.cpp
+1585906755 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodomatriz.cpp
 	"NodoMatriz.h"
 
 1585869609 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoblec.cpp
@@ -111,9 +112,11 @@
 	<fstream>
 	<cstring>
 
-1585892720 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\archivo.h
+1585904301 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\archivo.h
 	<string>
 	"json.hpp"
+	"ListaDobleCDiccionario.h"
+	"Matriz.h"
 
 1576027986 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\json.hpp
 	<algorithm>
@@ -283,9 +286,20 @@
 	<limits>
 	<type_traits>
 
-1585896354 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
+1585904745 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
 	"Archivo.h"
 	<iostream>
 	<fstream>
 	"json.hpp"
+
+1585904574 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
+	"Menu.h"
+
+1585904435 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
+	<iostream>
+	<stdlib.h>
+	"Archivo.h"
+	"ArbolABB.h"
+	"ListaDobleCDiccionario.h"
+	"Matriz.h"
 

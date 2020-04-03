@@ -24,11 +24,12 @@ class NodoMatriz
         string col; // almacena la columna del tablero
         int punteo; // almacena el puntaje de la letra
         char letra; // almacena la letra a buscar
+        string dobleotriple;// variable que dice si la casilla es puntaje doble o triple
 
         //metodo constructor de nodo tipo cabecera
         NodoMatriz(string col,string fila,string mensaje);
         //constructor para los datos almacenado en la matriz
-        NodoMatriz(string fila,string col,int punteo,char letra);
+        NodoMatriz(string fila,string col,int punteo,char letra,string dobleotriple);
         //metodo destructor
         virtual ~NodoMatriz();
 

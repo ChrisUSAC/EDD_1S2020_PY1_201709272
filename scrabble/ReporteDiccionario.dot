@@ -2,11 +2,49 @@ digraph G{
 rankdir=LR 
 node[ shape = box] 
 0[label = "hola" width=2.0 ]; 
-1[label = "como" width=2.0 ]; 
-2[label = "estas" width=2.0 ]; 
-3[label = "el" width=2.0 ]; 
-4[label = "dia" width=2.0 ]; 
-5[label = "de" width=2.0 ]; 
+1[label = "mundo" width=2.0 ]; 
+2[label = "proyecto" width=2.0 ]; 
+3[label = "diccionario" width=2.0 ]; 
+4[label = "ya" width=2.0 ]; 
+5[label = "esta" width=2.0 ]; 
+6[label = "cafe" width=2.0 ]; 
+7[label = "chocolate" width=2.0 ]; 
+8[label = "choco" width=2.0 ]; 
+9[label = "me" width=2.0 ]; 
+10[label = "encanta" width=2.0 ]; 
+11[label = "perica" width=2.0 ]; 
+12[label = "perro" width=2.0 ]; 
+13[label = "raton" width=2.0 ]; 
+14[label = "minecraft" width=2.0 ]; 
+15[label = "mine" width=2.0 ]; 
+16[label = "efe" width=2.0 ]; 
+17[label = "miles" width=2.0 ]; 
+18[label = "galleta" width=2.0 ]; 
+19[label = "gal" width=2.0 ]; 
+20[label = "audi" width=2.0 ]; 
+21[label = "audifono" width=2.0 ]; 
+22[label = "el" width=2.0 ]; 
+23[label = "ella" width=2.0 ]; 
+24[label = "te" width=2.0 ]; 
+25[label = "extraño" width=2.0 ]; 
+26[label = "extra" width=2.0 ]; 
+27[label = "zorra" width=2.0 ]; 
+28[label = "iman" width=2.0 ]; 
+29[label = "tiempo" width=2.0 ]; 
+30[label = "morir" width=2.0 ]; 
+31[label = "covid" width=2.0 ]; 
+32[label = "sentir" width=2.0 ]; 
+33[label = "oso" width=2.0 ]; 
+34[label = "piel" width=2.0 ]; 
+35[label = "carro" width=2.0 ]; 
+36[label = "atol" width=2.0 ]; 
+37[label = "elote" width=2.0 ]; 
+38[label = "lugar" width=2.0 ]; 
+39[label = "penny" width=2.0 ]; 
+40[label = "vos" width=2.0 ]; 
+41[label = "bocina" width=2.0 ]; 
+42[label = "estrella" width=2.0 ]; 
+43[label = "win" width=2.0 ]; 
 0 -> 1[dir = back]; 
 0 -> 1 
 1 -> 2[dir = back]; 
@@ -17,6 +55,82 @@ node[ shape = box]
 3 -> 4 
 4 -> 5[dir = back]; 
 4 -> 5 
-0 -> 5[dir = back]; 
-0 -> 5 
+5 -> 6[dir = back]; 
+5 -> 6 
+6 -> 7[dir = back]; 
+6 -> 7 
+7 -> 8[dir = back]; 
+7 -> 8 
+8 -> 9[dir = back]; 
+8 -> 9 
+9 -> 10[dir = back]; 
+9 -> 10 
+10 -> 11[dir = back]; 
+10 -> 11 
+11 -> 12[dir = back]; 
+11 -> 12 
+12 -> 13[dir = back]; 
+12 -> 13 
+13 -> 14[dir = back]; 
+13 -> 14 
+14 -> 15[dir = back]; 
+14 -> 15 
+15 -> 16[dir = back]; 
+15 -> 16 
+16 -> 17[dir = back]; 
+16 -> 17 
+17 -> 18[dir = back]; 
+17 -> 18 
+18 -> 19[dir = back]; 
+18 -> 19 
+19 -> 20[dir = back]; 
+19 -> 20 
+20 -> 21[dir = back]; 
+20 -> 21 
+21 -> 22[dir = back]; 
+21 -> 22 
+22 -> 23[dir = back]; 
+22 -> 23 
+23 -> 24[dir = back]; 
+23 -> 24 
+24 -> 25[dir = back]; 
+24 -> 25 
+25 -> 26[dir = back]; 
+25 -> 26 
+26 -> 27[dir = back]; 
+26 -> 27 
+27 -> 28[dir = back]; 
+27 -> 28 
+28 -> 29[dir = back]; 
+28 -> 29 
+29 -> 30[dir = back]; 
+29 -> 30 
+30 -> 31[dir = back]; 
+30 -> 31 
+31 -> 32[dir = back]; 
+31 -> 32 
+32 -> 33[dir = back]; 
+32 -> 33 
+33 -> 34[dir = back]; 
+33 -> 34 
+34 -> 35[dir = back]; 
+34 -> 35 
+35 -> 36[dir = back]; 
+35 -> 36 
+36 -> 37[dir = back]; 
+36 -> 37 
+37 -> 38[dir = back]; 
+37 -> 38 
+38 -> 39[dir = back]; 
+38 -> 39 
+39 -> 40[dir = back]; 
+39 -> 40 
+40 -> 41[dir = back]; 
+40 -> 41 
+41 -> 42[dir = back]; 
+41 -> 42 
+42 -> 43[dir = back]; 
+42 -> 43 
+0 -> 43[dir = back]; 
+0 -> 43 
 }

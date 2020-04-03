@@ -3,6 +3,9 @@
 #include <string>
 #include "json.hpp"
 
+#include "ListaDobleCDiccionario.h"
+#include "Matriz.h"
+
 using json = nlohmann::json;
 
 using namespace std;
@@ -13,8 +16,8 @@ class Archivo
         Archivo();
         virtual ~Archivo();
 
-        void leer(string ruta);
-        void guardar(json j);
+        void leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego);
+        void guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego);
 
     protected:
 

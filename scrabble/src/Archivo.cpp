@@ -16,7 +16,7 @@ Archivo::~Archivo()
 }
 
 //-----------------------------------------------------------------------------------------------------------------
-void Archivo::leer(string ruta)
+void Archivo::leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
 {
 
     ifstream archivo; //variable que facilita la lectura del archivo
@@ -47,13 +47,13 @@ void Archivo::leer(string ruta)
     archivo.close();//cierra el archivo
 
     //metodo que crea los objetos en memoria
-    guardar(jj);
+    guardar(jj,diccio,matrizJuego);
 
 }
 
 //-----------------------------------------------------------------------------------------------------------------
 //metodo para guardar los objetos en las estructuras
-void Archivo::guardar(json j)
+void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
 {
     int dimension; //variable que guarda la dimension del tablero
     int doblex;
@@ -79,6 +79,7 @@ void Archivo::guardar(json j)
             cout<<dobley<<endl;
             cout<<"\n"<<endl;
 
+
         }
         //for para casillas triples
         //cout<<"casillas triples: "<<endl;
@@ -100,11 +101,12 @@ void Archivo::guardar(json j)
             palabra = diccionario["palabra"];
             //cout<<"Diccionario: "<<endl;
             cout<<palabra<<endl;
-
+            diccio.insertarFinal(palabra);
 
         }
+        diccio.graficar();
 
-
+    system("cls");
     cout<<"Carga Realizada Exitosamente"<<endl;
 
 

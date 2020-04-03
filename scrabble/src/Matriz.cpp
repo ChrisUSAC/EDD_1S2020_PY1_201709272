@@ -64,10 +64,10 @@ NodoMatriz* Matriz::buscarCol(string col)
 }
 //------------------------------------------------------------------------------------------------------
 //insercion general
-void Matriz::insertarElemento(string fila,string col,int punteo, char letra)
+void Matriz::insertarElemento(string fila,string col,int punteo, char letra,string dobleotriple)
 {
     //se crea primero el nodo a insertar
-    NodoMatriz* nuevo = new NodoMatriz(fila,col,punteo,letra);
+    NodoMatriz* nuevo = new NodoMatriz(fila,col,punteo,letra,dobleotriple);
 
     //creacion de punteros para guardar mes(columna) y year(fila) si existen
     NodoMatriz* nodoColumna = buscarCol(col);
@@ -296,7 +296,11 @@ void Matriz::escribir()
             while(aux != 0 )
             {
                 string identificadorr = std::to_string(id);
+
                 archivo<<"f"+identificadorr+"[label = " + "\"" + aux->fila + "\"" + " width=2.0 , group = 1 ];" + " \n";
+
+
+                //archivo<<"f"+identificadorr+"[label = " + "\"" + aux->fila + "\"" + " width=2.0 , group = 1 ];" + " \n";
                 aux->mensaje = "f"+identificadorr; // se le mete al nodo en el atributo mensaje el identificador unico
                 cout<<"aux->mensaje+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++: "<<aux->mensaje<<endl;
                 aux = aux->abajo;
@@ -396,6 +400,23 @@ void Matriz::escribir()
 			    string iden = std::to_string(idNodo);
                 string corrc = std::to_string(grupC); //grupo al que pertenece
                 string corrc2 = std::to_string(correColumna); //columna a la que pertenece
+
+                if(dato->dobleotriple=="doble")
+                {
+
+                    archivo<<"n"+iden+"[label = "+ "\"" +dato->letra+ "\"" +" width = 1.5,fillcolor = lightskyblue,style = filled,group ="+corrc+"]; \n"; // esta linea esta bien
+                }
+                else if(dato->dobleotriple=="triple")
+                {
+
+                    archivo<<"n"+iden+"[label = "+ "\"" +dato->letra+ "\"" +" width = 1.5,fillcolor = red,style = filled, group ="+corrc+"]; \n"; // esta linea esta bien
+                }
+                else
+                {
+                    archivo<<"n"+iden+"[label = "+ "\"" +dato->letra+ "\"" +" width = 1.5, group ="+corrc+"]; \n"; // esta linea esta bien
+                }
+
+
                 archivo<<"n"+iden+"[label = "+ "\"" +dato->letra+ "\"" +" width = 1.5, group ="+corrc+"]; \n"; // esta linea esta bien
                 dato->mensaje = "n"+iden; // se le mete al nodo en el atributo mensaje el identificador unico
                 cout<<"dato->mensaje: //////////////////////////////////////////////////////////////////////////////////////// "<<dato->mensaje<<endl;

@@ -3,195 +3,44 @@ node[ shape = box]
 Raiz[label = "Raiz", width=1.5, group = 1]; 
  
 f0[label = "1" width=2.0 , group = 1 ]; 
-f1[label = "2" width=2.0 , group = 1 ]; 
-f2[label = "3" width=2.0 , group = 1 ]; 
-f3[label = "4" width=2.0 , group = 1 ]; 
-f4[label = "5" width=2.0 , group = 1 ]; 
-f5[label = "6" width=2.0 , group = 1 ]; 
-f6[label = "7" width=2.0 , group = 1 ]; 
-f7[label = "8" width=2.0 , group = 1 ]; 
-f8[label = "9" width=2.0 , group = 1 ]; 
-f0 -> f1[dir = back]; 
-f0 -> f1 
-f1 -> f2[dir = back]; 
-f1 -> f2 
-f2 -> f3[dir = back]; 
-f2 -> f3 
-f3 -> f4[dir = back]; 
-f3 -> f4 
-f4 -> f5[dir = back]; 
-f4 -> f5 
-f5 -> f6[dir = back]; 
-f5 -> f6 
-f6 -> f7[dir = back]; 
-f6 -> f7 
-f7 -> f8[dir = back]; 
-f7 -> f8 
 c0[label = "1" width=2.0 , group = 2 ]; 
-c1[label = "3" width=2.0 , group = 3 ]; 
-c2[label = "4" width=2.0 , group = 4 ]; 
-c3[label = "8" width=2.0 , group = 5 ]; 
-c4[label = "22" width=2.0 , group = 6 ]; 
-c5[label = "33" width=2.0 , group = 7 ]; 
-c6[label = "44" width=2.0 , group = 8 ]; 
-c7[label = "77" width=2.0 , group = 9 ]; 
-c8[label = "88" width=2.0 , group = 10 ]; 
-c9[label = "222" width=2.0 , group = 11 ]; 
-c10[label = "333" width=2.0 , group = 12 ]; 
-c11[label = "355" width=2.0 , group = 13 ]; 
-c12[label = "3444" width=2.0 , group = 14 ]; 
-c13[label = "3566" width=2.0 , group = 15 ]; 
-c14[label = "32222" width=2.0 , group = 16 ]; 
+c1[label = "2" width=2.0 , group = 3 ]; 
+c2[label = "3" width=2.0 , group = 4 ]; 
+c3[label = "4" width=2.0 , group = 5 ]; 
 c0 -> c1[dir = back]; 
 c0 -> c1 
 c1 -> c2[dir = back]; 
 c1 -> c2 
 c2 -> c3[dir = back]; 
 c2 -> c3 
-c3 -> c4[dir = back]; 
-c3 -> c4 
-c4 -> c5[dir = back]; 
-c4 -> c5 
-c5 -> c6[dir = back]; 
-c5 -> c6 
-c6 -> c7[dir = back]; 
-c6 -> c7 
-c7 -> c8[dir = back]; 
-c7 -> c8 
-c8 -> c9[dir = back]; 
-c8 -> c9 
-c9 -> c10[dir = back]; 
-c9 -> c10 
-c10 -> c11[dir = back]; 
-c10 -> c11 
-c11 -> c12[dir = back]; 
-c11 -> c12 
-c12 -> c13[dir = back]; 
-c12 -> c13 
-c13 -> c14[dir = back]; 
-c13 -> c14 
  Raiz -> f0 [dir = back];  
  Raiz -> f0 ; 
  Raiz -> c0 [dir = back]; 
  Raiz -> c0 ; 
-{rank = same;Raiz;c0;c1;c2;c3;c4;c5;c6;c7;c8;c9;c10;c11;c12;c13;c14;} 
-n0[label = "d" width = 1.5, group =2]; 
-n1[label = "d" width = 1.5, group =3]; 
-n2[label = "d" width = 1.5, group =3]; 
-n3[label = "d" width = 1.5, group =3]; 
-n4[label = "d" width = 1.5, group =3]; 
-n5[label = "d" width = 1.5, group =3]; 
-n6[label = "d" width = 1.5, group =3]; 
-n7[label = "d" width = 1.5, group =3]; 
-n8[label = "d" width = 1.5, group =3]; 
-n9[label = "d" width = 1.5, group =4]; 
-n10[label = "d" width = 1.5, group =5]; 
-n11[label = "d" width = 1.5, group =6]; 
-n12[label = "d" width = 1.5, group =7]; 
-n13[label = "d" width = 1.5, group =8]; 
-n14[label = "d" width = 1.5, group =9]; 
-n15[label = "d" width = 1.5, group =10]; 
-n16[label = "d" width = 1.5, group =11]; 
-n17[label = "d" width = 1.5, group =12]; 
-n18[label = "d" width = 1.5, group =13]; 
-n19[label = "d" width = 1.5, group =14]; 
-n20[label = "d" width = 1.5, group =15]; 
-n21[label = "d" width = 1.5, group =16]; 
+{rank = same;Raiz;c0;c1;c2;c3;} 
+n0[label = "a" width = 1.5,fillcolor = lightskyblue,style = filled,group =2]; 
+n0[label = "a" width = 1.5, group =2]; 
+n1[label = "u" width = 1.5,fillcolor = red,style = filled, group =3]; 
+n1[label = "u" width = 1.5, group =3]; 
+n2[label = "t" width = 1.5, group =4]; 
+n2[label = "t" width = 1.5, group =4]; 
+n3[label = "o" width = 1.5, group =5]; 
+n3[label = "o" width = 1.5, group =5]; 
 c0 -> n0 [dir = back];  
 c0 -> n0
 c1 -> n1 [dir = back];  
 c1 -> n1
+c2 -> n2 [dir = back];  
+c2 -> n2
+c3 -> n3 [dir = back];  
+c3 -> n3
+f0 -> n0 [dir = back];  
+f0 -> n0
+n0 -> n1 [dir = back];  
+n0 -> n1
 n1 -> n2 [dir = back];  
 n1 -> n2
 n2 -> n3 [dir = back];  
 n2 -> n3
-n3 -> n4 [dir = back];  
-n3 -> n4
-n4 -> n5 [dir = back];  
-n4 -> n5
-n5 -> n6 [dir = back];  
-n5 -> n6
-n6 -> n7 [dir = back];  
-n6 -> n7
-n7 -> n8 [dir = back];  
-n7 -> n8
-c2 -> n9 [dir = back];  
-c2 -> n9
-c3 -> n10 [dir = back];  
-c3 -> n10
-c4 -> n11 [dir = back];  
-c4 -> n11
-c5 -> n12 [dir = back];  
-c5 -> n12
-c6 -> n13 [dir = back];  
-c6 -> n13
-c7 -> n14 [dir = back];  
-c7 -> n14
-c8 -> n15 [dir = back];  
-c8 -> n15
-c9 -> n16 [dir = back];  
-c9 -> n16
-c10 -> n17 [dir = back];  
-c10 -> n17
-c11 -> n18 [dir = back];  
-c11 -> n18
-c12 -> n19 [dir = back];  
-c12 -> n19
-c13 -> n20 [dir = back];  
-c13 -> n20
-c14 -> n21 [dir = back];  
-c14 -> n21
-f0 -> n0 [dir = back];  
-f0 -> n0
-n0 -> n9 [dir = back];  
-n0 -> n9
-n9 -> n10 [dir = back];  
-n9 -> n10
-n10 -> n11 [dir = back];  
-n10 -> n11
-n11 -> n12 [dir = back];  
-n11 -> n12
-n12 -> n13 [dir = back];  
-n12 -> n13
-n13 -> n14 [dir = back];  
-n13 -> n14
-n14 -> n15 [dir = back];  
-n14 -> n15
-n15 -> n16 [dir = back];  
-n15 -> n16
-n16 -> n17 [dir = back];  
-n16 -> n17
-n17 -> n18 [dir = back];  
-n17 -> n18
-n18 -> n19 [dir = back];  
-n18 -> n19
-n19 -> n20 [dir = back];  
-n19 -> n20
-n20 -> n21 [dir = back];  
-n20 -> n21
-f1 -> n1 [dir = back];  
-f1 -> n1
-f2 -> n2 [dir = back];  
-f2 -> n2
-f3 -> n3 [dir = back];  
-f3 -> n3
-f4 -> n4 [dir = back];  
-f4 -> n4
-f5 -> n5 [dir = back];  
-f5 -> n5
-f6 -> n6 [dir = back];  
-f6 -> n6
-f7 -> n7 [dir = back];  
-f7 -> n7
-f8 -> n8 [dir = back];  
-f8 -> n8
-{rank = same;f0;n0;n9;n10;n11;n12;n13;n14;n15;n16;n17;n18;n19;n20;n21;} 
-{rank = same;f1;n1;} 
-{rank = same;f2;n2;} 
-{rank = same;f3;n3;} 
-{rank = same;f4;n4;} 
-{rank = same;f5;n5;} 
-{rank = same;f6;n6;} 
-{rank = same;f7;n7;} 
-{rank = same;f8;n8;} 
+{rank = same;f0;n0;n1;n2;n3;} 
 }
