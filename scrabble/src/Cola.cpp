@@ -83,3 +83,68 @@ void Cola::imprimir()
 
 }
 
+
+void Cola::graficar()
+{
+    if(this->primero!=0)
+    {
+       escribir();
+    }
+    else
+    {
+    cout<<"Error cola vacia no se puede graficar :( "<<endl;
+    }
+
+}
+
+void Cola::escribir()
+{
+    ofstream archivo;
+
+    archivo.open("ColaFichasJuego.dot",ios::out); // abriendo o creando el archivo
+
+    //validar que se creara correctamente
+    if(archivo.fail())
+    {
+            cout<<"no se pudo abrir el archivo"<<endl;
+
+    }
+    else
+    {
+
+        //escribir sintaxis dot para la imagen
+            archivo<<"digraph G{ \n";
+            archivo<<"rankdir=LR \n";
+            archivo<<"node[ shape = box] \n";
+
+            NodoCola* aux = this->primero;
+
+            int id=0;
+            while(aux != 0 )
+            {
+                string identificadorr = std::to_string(id);
+                archivo<<identificadorr+"[label = " + "\"" + aux->letra +" puntos: "+ to_string(aux->punteo)+ "\"" + " width=2.0 ];" + " \n";
+                aux = aux->siguiente;
+                id++;
+            }
+
+            int id2=0;
+            NodoCola* aux2 = this->primero;
+            while(aux2->siguiente != 0 )
+            {
+                string identificadorr = std::to_string(id2);
+                string identificadorr2 = std::to_string(id2+1);
+                archivo<<identificadorr+" -> "+ identificadorr2 +" \n";
+                aux2 = aux2->siguiente;
+                id2++;
+            }
+
+            archivo<<"}";
+
+    }
+    archivo.close();//se cierra el archivo
+    system("dot -Tpng ColaFichasJuego.dot -o ColaFichasJuego.png"); //Create
+             system("ColaFichasJuego.png"); //Open
+
+}
+

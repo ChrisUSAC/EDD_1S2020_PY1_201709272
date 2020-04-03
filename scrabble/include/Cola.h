@@ -1,6 +1,9 @@
 #ifndef COLA_H
 #define COLA_H
 #include "NodoCola.h" // importacion del nodo de tipo cola
+#include <iostream>
+#include <cstring>
+#include <fstream>
 
 using namespace std;
 
@@ -14,11 +17,16 @@ class Cola
         bool estaVacia(); //metodo que informa si la cola esta vacia
         void imprimir(); // metodo para imprimir en consola
 
-    protected:
+        void graficar(); // metodo que realiza el graphiz
+        void escribir(); // escribe la sintaxis dot para el reporte
 
-    private:
         NodoCola* primero; // puntero que hace referencia al primero de la cola
         NodoCola* ultimo; // puntero que hace referencia al ultimo de la cola
         int tamano; // tamano de la cola dinamica
+
+    protected:
+
+    private:
+
 };
 #endif // COLA_H

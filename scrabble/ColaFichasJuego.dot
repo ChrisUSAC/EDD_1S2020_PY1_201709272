@@ -1,0 +1,15 @@
+digraph G{ 
+rankdir=LR 
+node[ shape = box] 
+0[label = "c puntos: 3" width=2.0 ]; 
+1[label = "d puntos: 4" width=2.0 ]; 
+2[label = "e puntos: 2" width=2.0 ]; 
+3[label = "g puntos: 6" width=2.0 ]; 
+4[label = "r puntos: 5" width=2.0 ]; 
+5[label = "v puntos: 1" width=2.0 ]; 
+0 -> 1 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+}
