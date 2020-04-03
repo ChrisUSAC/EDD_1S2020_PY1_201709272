@@ -1,17 +1,19 @@
 # depslib dependency file v1.0
-1585872322 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585888689 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
 	"Cola.h"
 
-1585872342 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
+1585889304 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
 	<iostream>
 
-1585871948 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\cola.h
+1585878042 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\cola.h
 	"NodoCola.h"
 	<iostream>
 	<cstring>
 	<fstream>
+	<stdlib.h>
+	<time.h>
 
 1584755376 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodocola.h
 
