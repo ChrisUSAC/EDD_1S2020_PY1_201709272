@@ -47,8 +47,9 @@ void Cola::enqueue(int punteo, char letra)
 
 //-----------------------------------------------------------------------------------------------------------------
 //metodo desencolar
-void Cola::dequeue()
+NodoCola* Cola::dequeue()
 {
+    NodoCola* desencolar;
     //verificar que exista un elemento a eliminar
     if(estaVacia())
     {
@@ -57,11 +58,12 @@ void Cola::dequeue()
     else
     {
         //se corre el puntero primero a siguiente
+        desencolar = this->primero;
         this->primero =this->primero->siguiente;
         this->tamano--;
     }
 
-
+    return desencolar;
 }
 
 //-----------------------------------------------------------------------------------------------------------------

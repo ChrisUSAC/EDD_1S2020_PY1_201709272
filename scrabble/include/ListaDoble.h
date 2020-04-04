@@ -25,6 +25,9 @@ class ListaDoble
         void escribir(); // escribir el archivo de texto
 
         int getTam(); // retorna el tamano de la lista
+        NodoListaDoble* getPrimero();
+
+        void resetear(); // resetea la lista de fichas
 
 
     protected:

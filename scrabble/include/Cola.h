@@ -15,7 +15,7 @@ class Cola
         Cola(); //metodo constructor
         virtual ~Cola(); //metodo destructor
         void enqueue(int punteo, char letra);//metodo para encolar, inserta al final
-        void dequeue(); // metodo para desencolar
+        NodoCola* dequeue(); // metodo para desencolar
         bool estaVacia(); //metodo que informa si la cola esta vacia
         void imprimir(); // metodo para imprimir en consola
 

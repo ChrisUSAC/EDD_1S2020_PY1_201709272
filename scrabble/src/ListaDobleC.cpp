@@ -40,10 +40,53 @@ void ListaDobleC::imprimir()
         //ciclo de impresion en consola
         while(indice < this->tam)
         {
-            cout<<"aux->nombre: "<<aux->nombre<<endl;
+            cout<<indice<<" "<<aux->nombre<<endl;
             aux =aux->sig;
             indice++;
 
+        }
+
+    }
+}
+
+//------------------------------------------------------------------------------------------------------
+string ListaDobleC::enviarJugador(int numero)
+{
+    string nombreJugador; // variable que retorna el metodo
+    if(estaVacia())
+    {
+        cout<<"lista vacia"<<endl;
+    }
+    else
+    {
+        //nodo temporal para no mover la referecia al primero
+        NodoListaDobleC* aux = this->primero;
+
+        if(numero >= 0 && numero < this->tam)
+        {
+
+            //entero que servira para iterar el while
+            int indice =0;
+
+            //ciclo de impresion en consola
+            while(indice < this->tam)
+            {
+                if(indice == numero)
+                {
+                    cout<<"se envia a "<<aux->nombre<<endl;
+                    return aux->nombre;
+                }
+
+                aux =aux->sig;
+                indice++;
+
+            }
+
+        }
+        else
+        {
+            cout<<"opcion invalida, se le asignara jugador 0: "<<aux->nombre<<endl;
+            return aux->nombre;
         }
 
     }

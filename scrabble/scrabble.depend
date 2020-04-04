@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1585908747 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
+1585909047 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\main.cpp
 	<iostream>
 	"Menu.h"
 	"Matriz.h"
 
-1585889304 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
+1585951079 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\cola.cpp
 	"Cola.h"
 	<iostream>
 
-1585878042 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\cola.h
+1585951025 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\cola.h
 	"NodoCola.h"
 	<iostream>
 	<cstring>
@@ -37,7 +37,7 @@
 	<string.h>
 	<iostream>
 
-1585115752 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\arbolabb.cpp
+1585940717 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\arbolabb.cpp
 	"ArbolABB.h"
 
 1585113682 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\arbolabb.h
@@ -53,7 +53,7 @@
 1585179259 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolista.cpp
 	"NodoLista.h"
 
-1585908461 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
+1585911430 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
 	"Matriz.h"
 
 1585905354 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\matriz.h
@@ -77,20 +77,20 @@
 1585869540 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoblec.h
 	<iostream>
 
-1585870172 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblec.cpp
+1585946425 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblec.cpp
 	"ListaDobleC.h"
 	<iostream>
 
-1585868602 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblec.h
+1585945635 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblec.h
 	"NodoListaDobleC.h"
 	<iostream>
 	<fstream>
 	<cstring>
 
-1585288964 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoble.cpp
+1585963375 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoble.cpp
 	"ListaDoble.h"
 
-1585288648 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoble.h
+1585963334 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoble.h
 	"NodoListaDoble.h"
 	<iostream>
 	<fstream>
@@ -286,20 +286,41 @@
 	<limits>
 	<type_traits>
 
-1585904745 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
+1585970372 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
 	"Archivo.h"
 	<iostream>
 	<fstream>
 	"json.hpp"
 
-1585904574 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
+1585968687 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
 	"Menu.h"
 
-1585904435 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
+1585962681 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
 	<iostream>
 	<stdlib.h>
+	<fstream>
+	<conio.h>
 	"Archivo.h"
 	"ArbolABB.h"
+	"nodoABB.h"
 	"ListaDobleCDiccionario.h"
 	"Matriz.h"
+	"cstring"
+	"string"
+	"ListaDobleC.h"
+	"NodoCola.h"
+	"Cola.h"
+	"Jugador.h"
+	"NodoListaDoble.h"
+
+1585947949 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\jugador.cpp
+	"Jugador.h"
+
+1585947904 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\jugador.h
+	"Matriz.h"
+	"ListaDoble.h"
+	"Lista.h"
+	<iostream>
+	<string.h>
+	<string>
 

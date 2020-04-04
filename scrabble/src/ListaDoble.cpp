@@ -144,3 +144,17 @@ int ListaDoble::getTam()
 {
     return this->tam;
 }
+//-----------------------------------------------------------------------------------------------------------------
+//retorna el puntero primero de la Lista
+NodoListaDoble* ListaDoble::getPrimero()
+{
+    return this->primero;
+}
+//-----------------------------------------------------------------------------------------------------------------
+void ListaDoble::resetear()
+{
+    this->primero = 0;
+    this->ultimo = 0;
+    this->tam  = 0;
+
+}

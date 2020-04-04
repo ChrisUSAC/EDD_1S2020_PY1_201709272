@@ -135,6 +135,7 @@ nodoABB* ArbolABB::recursive_seachPlaylist(nodoABB* actual, string nombre)
            aux = recursive_seachPlaylist(actual->derecha, nombre);
         }
     }
+    //cout<<"el usuario aun no existe"<<endl;
     return aux;
 }
 //------------------------------------------------------------------------------------------------------------------------------------

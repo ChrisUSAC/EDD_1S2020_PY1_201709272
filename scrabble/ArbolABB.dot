@@ -3,16 +3,18 @@ digraph ArbolBB{
 rankdir=TB;
 
 node [shape = record];
-N_Daniel[label ="<HI>|Daniel|<HD>"]; 
-N_Carmen[label ="<HI>|Carmen"]; 
-N_Aymme[label ="Aymme|<HD>"]; 
-N_Berceli[label ="Berceli"]; 
-N_Aymme:HD -> N_Berceli
-N_Carmen:HI -> N_Aymme
-N_Daniel:HI -> N_Carmen
-N_Luis[label ="<HI>|Luis"]; 
-N_Gabriela[label ="Gabriela"]; 
-N_Luis:HI -> N_Gabriela
-N_Daniel:HD -> N_Luis
+N_c[label ="<HI>|c|<HD>"]; 
+N_a[label ="a|<HD>"]; 
+N_b[label ="b"]; 
+N_a:HD -> N_b
+N_c:HI -> N_a
+N_d[label ="d|<HD>"]; 
+N_m[label ="<HI>|m|<HD>"]; 
+N_e[label ="e"]; 
+N_m:HI -> N_e
+N_o[label ="o"]; 
+N_m:HD -> N_o
+N_d:HD -> N_m
+N_c:HD -> N_d
 
 }

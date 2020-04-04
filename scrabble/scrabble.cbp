@@ -37,6 +37,7 @@
 		<Unit filename="include/ArbolABB.h" />
 		<Unit filename="include/Archivo.h" />
 		<Unit filename="include/Cola.h" />
+		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/Lista.h" />
 		<Unit filename="include/ListaDoble.h" />
 		<Unit filename="include/ListaDobleC.h" />
@@ -53,6 +54,7 @@
 		<Unit filename="src/ArbolABB.cpp" />
 		<Unit filename="src/Archivo.cpp" />
 		<Unit filename="src/Cola.cpp" />
+		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Lista.cpp" />
 		<Unit filename="src/ListaDoble.cpp" />
 		<Unit filename="src/ListaDobleC.cpp" />

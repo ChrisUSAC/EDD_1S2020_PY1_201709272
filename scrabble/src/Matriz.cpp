@@ -180,32 +180,51 @@ NodoMatriz* Matriz::insertar_ordenado_columna(NodoMatriz* nuevo, NodoMatriz* cab
 NodoMatriz* Matriz::insertar_ordenado_fila(NodoMatriz* nuevo, NodoMatriz* cabeza_fila)
 {
     NodoMatriz* temp = cabeza_fila;
+    bool bandera = false;
 
     while(true)
     {
         //evaluar si ya existe fila
-        const char *a =temp->fila.c_str();
-        const char *b =nuevo->fila.c_str();
+        int a = atoi(temp->fila.c_str());
+        int b = atoi(nuevo->fila.c_str());
         //si son iguales hacer una sobre escritura
-        if(strcmp(a,b) == 0)
+        if(a==b)
         {
             //si mes es el mismo sobre escribe
             return temp;
+        }
+        else if(a>b)
+        {
+            bandera =true;
+            break;
         }
         //si el siguiente no es nulo
         if(temp->abajo != 0)
         {
             temp = temp->abajo;
         }
+
         else
         {
             //tengo que insertar al final ya
             break;
         }
     }
+    //evaluar si bandera es verdadero
+    if(bandera)
+    {
+        //insercion antes de temporal es decir entre dos nodos
+        nuevo->abajo = temp;
+        temp->arriba->abajo = nuevo;
+        nuevo->arriba = temp->arriba;
+        temp->arriba = nuevo;
+    }
+    else
+    {
         //insercion al final
         temp->abajo = nuevo;
         nuevo->arriba = temp;
+    }
 
     //se retorna el nuevo insertado
     return nuevo;

@@ -78,6 +78,7 @@ void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
             cout<<doblex<<endl;
             cout<<dobley<<endl;
             cout<<"\n"<<endl;
+            matrizJuego.insertarElemento(to_string(dobley),to_string(doblex),0,' ',"doble");
 
 
         }
@@ -91,6 +92,7 @@ void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
             cout<<triplex<<endl;
             cout<<tripley<<endl;
             cout<<"\n"<<endl;
+            matrizJuego.insertarElemento(to_string(tripley),to_string(triplex),0,' ',"triple");
 
         }
 
@@ -104,7 +106,8 @@ void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
             diccio.insertarFinal(palabra);
 
         }
-        diccio.graficar();
+        //diccio.graficar();
+        //matrizJuego.graficar();
 
     system("cls");
     cout<<"Carga Realizada Exitosamente"<<endl;
