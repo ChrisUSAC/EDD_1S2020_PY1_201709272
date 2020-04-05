@@ -34,6 +34,9 @@ class Menu
         void turnoJugador1(); //turno jugador 1
         void turnoJugador2(); //turno jugador 2
 
+        void menuAuxiliarPonerFicchas();
+        void insertandoPalabra(int cantidadLetras, ListaDoble& letrasColocar); // se coloca en el tablero ya sea en posicion vertical u horizontal
+
 
         //objetos
         Archivo* archivo; //objeto de tipo archivo para cargar casillas dobles y triples y palabras al diccionario

@@ -71,6 +71,31 @@ void ListaDoble::insertarFinal(char letra, int punteo)
         tam++; // aumenta el tamano de la lista
     }
 }
+//-----------------------------------------------------------------------------------------------------------------
+//metodo que inserta al inicio
+void ListaDoble::insertarInicio(char letra, int punteo)
+{
+    //se instancia el nodo
+    NodoListaDoble *n = new NodoListaDoble(letra,punteo);
+
+    //se evalua si la lista aun no tiene nodos
+    if(estaVacia())
+    {
+    /*de ser el primer nodo a ingresar se apuntan primero y ultimo a
+    dicho nodo */
+    primero = n;
+    ultimo = n;
+    tam++; // aumenta el tamano de la lista
+    }
+    //si ya existe algun nodo
+    else
+    {
+        n->sig = primero;
+        primero->ant = n;
+        primero = n;
+        tam++; // aumenta el tamano de la lista
+    }
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 //metodo que realiza el reporte graphiz
@@ -156,5 +181,119 @@ void ListaDoble::resetear()
     this->primero = 0;
     this->ultimo = 0;
     this->tam  = 0;
+
+}
+//-----------------------------------------------------------------------------------------------------------------
+NodoListaDoble* ListaDoble::remove_at(int index)
+{
+    //se crea un nodo auxiliar para no perder la referencia
+    NodoListaDoble* aux = this->primero;
+
+    //si la lista esta vacia, solo se le informa a usuario
+    if(estaVacia())
+    {
+    cout<<"Lista Vacia"<<endl;
+    return aux;
+    }
+    else
+    {
+        //se verifica que el indice exista en la lista
+        if(index >=0 && index<tam)
+        {
+
+            //si solo existe un nodo en la lista
+            if(index == 0 && tam == 1)
+            {
+                //los punteros de la lista se apuntan a 0
+                this->primero=0;
+                this->ultimo=0;
+                //se reduce el tamano de la lista
+                tam--;
+                return aux;
+            }
+            //si existe mas de un nodo en la lista
+            else
+            {
+                //si se elimina al primero
+                if(index == 0)
+                {
+                    this->primero = primero->sig;
+                    this->primero->ant = 0;
+                    cout<<"Elimino Primero"<<endl;
+                    tam--;
+                    return aux;
+                }
+                //si se elimina al ultimo
+                else if(index == tam-1)
+                {
+                    aux = this->ultimo;
+                    this->ultimo= ultimo->ant;
+                    this->ultimo->sig=0;
+                    cout<<"Elimino ultimo"<<endl;
+                    tam--;
+                    return aux;
+                }
+                //si se elimina uno del centro
+                else if(index != 0 && index != tam-1)
+                {
+                    cout<<"uno del centro"<<endl;
+
+                    //se crea contador para validar la posicion a eliminar
+                    int contador = 0;
+                    //se recorre la lista en busca del index
+                    while(aux!=0)
+                    {
+                    // si el contador y el index coinciden se elimina el nodo
+                        if(contador == index)
+                        {
+                        //el aux ya tiene la referencia del nodo a eliminar
+                        aux->ant->sig = aux->sig;
+                        aux->sig->ant = aux->ant;
+                        //se apuntan a nulos los punteros del eliminado
+                        aux->ant = 0;
+                        aux->sig =0;
+                        //se descuenta el nodo de la lista
+                        tam--;
+                        return aux;
+                        //se corta el ciclo para mejor manejo de  memoria
+                        break;
+                        }
+                    //se recorre el puntero
+                    aux =aux->sig;
+                    contador++;
+                    }
+
+                }
+            }
+
+        }
+        else
+        {
+        cout<<"El indice indicado no existe"<<endl;
+        return aux=0;
+        }
+    }
+}
+//-----------------------------------------------------------------------------------------------------------------
+string ListaDoble::evaluarPalabra()
+{
+    string palabraFormada="";
+
+    NodoListaDoble* aux = this->primero;//nodo auxiliar
+
+    if(estaVacia())
+    {
+        cout<<"Lista Vacia"<<endl;
+    }
+    else
+    {
+        while(aux != 0 )
+        {
+
+            palabraFormada += aux->letra;
+            aux = aux->sig;
+        }
+    }
+    return palabraFormada;
 
 }

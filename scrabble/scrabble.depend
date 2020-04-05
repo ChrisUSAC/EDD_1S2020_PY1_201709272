@@ -53,7 +53,7 @@
 1585179259 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolista.cpp
 	"NodoLista.h"
 
-1585911430 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
+1586064776 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\matriz.cpp
 	"Matriz.h"
 
 1585905354 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\matriz.h
@@ -87,10 +87,10 @@
 	<fstream>
 	<cstring>
 
-1585963375 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoble.cpp
+1586049059 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoble.cpp
 	"ListaDoble.h"
 
-1585963334 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoble.h
+1586048808 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoble.h
 	"NodoListaDoble.h"
 	<iostream>
 	<fstream>
@@ -102,11 +102,11 @@
 1585288215 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoble.cpp
 	"NodoListaDoble.h"
 
-1585870409 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblecdiccionario.cpp
+1586051301 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblecdiccionario.cpp
 	"ListaDobleCDiccionario.h"
 	<iostream>
 
-1585869795 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblecdiccionario.h
+1586050791 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblecdiccionario.h
 	"NodoListaDobleC.h"
 	<iostream>
 	<fstream>
@@ -292,10 +292,10 @@
 	<fstream>
 	"json.hpp"
 
-1585968687 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
+1586063950 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
 	"Menu.h"
 
-1585962681 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
+1586062071 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
 	<iostream>
 	<stdlib.h>
 	<fstream>

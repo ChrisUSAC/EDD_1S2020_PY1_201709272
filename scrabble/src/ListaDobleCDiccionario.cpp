@@ -50,6 +50,45 @@ void ListaDobleCDiccionario::imprimir()
     }
 }
 //------------------------------------------------------------------------------------------------------
+bool ListaDobleCDiccionario::validarPalabra(string palabraAValidar)
+{
+    bool validacion=false;
+    if(estaVacia())
+    {
+        cout<<"lista vacia"<<endl;
+        return validacion;
+    }
+    else
+    {
+        //nodo temporal para no mover la referecia al primero
+        NodoListaDobleC* aux = this->primero;
+        //entero que servira para iterar el while
+        int indice =0;
+
+        //ciclo de impresion en consola
+        while(indice < this->tam)
+        {
+
+            //evaluar si existe
+            const char *a =aux->palabraDiccionario.c_str();
+            const char *b =palabraAValidar.c_str();
+            //comparamos con el metodo y si son iguales retorna
+            if(strcmp(a,b) == 0)
+            {
+                validacion = true;
+                return validacion; // se retorna el puntero posicionado en esa fila
+            }
+
+            aux =aux->sig;
+            indice++;
+
+        }
+        return validacion;
+
+    }
+}
+
+//------------------------------------------------------------------------------------------------------
 //metodo para insertar al final el nuevo nodo
 void ListaDobleCDiccionario::insertarFinal(string palabra)
 {

@@ -19,6 +19,7 @@ class ListaDoble
         bool estaVacia(); // metodo que informa si la lista esta vacia
         void imprimir(); // metodo que imprime la lista en consola
         void insertarFinal(char letra, int punteo); // metodo que inserta al final de la lista
+        void insertarInicio(char letra, int punteo); // metodo que inserta al final de la lista
 
 
         void graficar(); // metodo que realiza el reporte graphiz
@@ -28,6 +29,9 @@ class ListaDoble
         NodoListaDoble* getPrimero();
 
         void resetear(); // resetea la lista de fichas
+        NodoListaDoble* remove_at(int index); //metodo que elimina el nodo de la lista y lo retorna para insertarlo en la matriz
+
+        string evaluarPalabra(); // metodo que devuelve una cadena de las palabras sacadas
 
 
     protected:

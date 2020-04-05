@@ -434,8 +434,11 @@ void Menu::turnoJugador1()
 
         else if(tecla==51) //opcion 3
         {
-            cout<<"opcion 3 jugador 1"<<endl;
-            //break;
+            menuAuxiliarPonerFicchas();
+
+
+
+            break;
         }
         else if(tecla==52) //opcion 4
         {
@@ -528,3 +531,257 @@ void Menu::turnoJugador2()
     }
 
 }
+//--------------------------------------------------------------------------------------------------
+void Menu::menuAuxiliarPonerFicchas()
+{
+    ListaDoble* fichasSacadas = new ListaDoble(); // lista de fichas que se van sacando para validar
+    string lexemaPalabraFormada = ""; // concatena cada char que se va sacando de la lista, para validar que la palabra sea valida
+
+    while(true)
+    {
+        system("cls");
+        cout<<"opcion 3 jugador 1"<<endl;
+        jugador1->listaFichas->imprimir();
+        cout<<"Escape para validar palabra."<<endl;
+        cout<<"Seleccione ficha a colocar: "<<endl;
+        int opcionNum = getch(); //caracter a evaluar
+
+        NodoListaDoble* aux=0; //nodo que se evalua si trae algo
+
+        if(opcionNum==49)// numero 1
+        {
+            aux = jugador1->listaFichas->remove_at(0);
+        }
+        else if(opcionNum==50)// numero 2
+        {
+            aux = jugador1->listaFichas->remove_at(1);
+        }
+        else if(opcionNum==51)// numero 3
+        {
+            aux = jugador1->listaFichas->remove_at(2);
+        }
+        else if(opcionNum==52)// numero 4
+        {
+            aux = jugador1->listaFichas->remove_at(3);
+        }
+        else if(opcionNum==53)// numero 5
+        {
+            aux = jugador1->listaFichas->remove_at(4);
+        }
+        else if(opcionNum==54)// numero 6
+        {
+            aux = jugador1->listaFichas->remove_at(5);
+        }
+        else if(opcionNum==55)// numero 7
+        {
+            aux = jugador1->listaFichas->remove_at(6);
+        }
+        else if(opcionNum==27)// numero Escape
+        {
+
+            //el usuario pidio validar su palabra
+            lexemaPalabraFormada = fichasSacadas->evaluarPalabra();
+            cout<<"palabra a buscar en el diccionario: "<<lexemaPalabraFormada<<endl;
+
+            //si la palabra existe, entonces colocar en el tablero y sumar puntos, luego terminar el turno
+            if(diccio->validarPalabra(lexemaPalabraFormada))
+            {
+                cout<<"la palabra si existe: "<<lexemaPalabraFormada<<endl;
+
+                //darle la cantidad de fichas de la palabra
+                int  contar = 0;
+                while(contar < fichasSacadas->getTam())
+                {
+                    if(colaFichas->tamano!=0)
+                    {
+                        char letra;
+                        int punteo=0;
+                        ficha = colaFichas->dequeue();
+                        letra = ficha->letra;
+                        punteo = ficha->punteo;
+
+                        jugador1->listaFichas->insertarFinal(letra,punteo);
+
+                    }
+
+
+                    contar++;
+                }
+                insertandoPalabra(fichasSacadas->getTam(),*fichasSacadas);
+                matrizJuego->graficar();
+                system("cls");
+                cout<<"palabra Insertada "<<endl;
+                cout<<"Graficando Resultado "<<endl;
+
+            }
+            //de no ser valida la palabra formada, regresar las fichas al jugador
+            else
+            {
+                cout<<"Regresando fichas al jugador..."<<endl;
+                cout<<"tama;o de la lista: "<<to_string(fichasSacadas->getTam());
+                //ciclo que regresa las fichas
+
+                NodoListaDoble* regreso = fichasSacadas->getPrimero();
+                int  contar = 0;
+                while(contar < fichasSacadas->getTam())
+                {
+                    jugador1->listaFichas->insertarFinal(regreso->letra,regreso->punteo);
+                    regreso = regreso->sig;
+                    contar++;
+                }
+
+
+            }
+
+            break;
+        }
+        else // envia a remover un indice inexistente por defecto, lo que terminara su turno en evaluacion futura
+        {
+            aux = jugador1->listaFichas->remove_at(11);
+        }
+
+
+
+        //evaluar si aux es diferente de nulo, es decir si saco un nodo de la lista doble
+        if(aux!=0)
+        {
+            cout<<"se extrajo: letra "<<aux->letra<<" valor: "<<to_string(aux->punteo)<<endl;
+            //insertar en la lista de sacadas
+            fichasSacadas->insertarFinal(aux->letra,aux->punteo);
+
+        }
+        else
+        {
+            //primero evaluar si la lista esta vacia, es decir si uso sus 7 fichas
+            if(jugador1->listaFichas->estaVacia())
+            {
+                //de estar vacia validar palabra del diccionario formada
+                lexemaPalabraFormada = fichasSacadas->evaluarPalabra();
+                cout<<"palabra a buscar en el diccionario: "<<lexemaPalabraFormada<<endl;
+
+                //si la palabra existe, entonces colocar en el tablero y sumar puntos, luego terminar el turno
+                if(diccio->validarPalabra(lexemaPalabraFormada))
+            if(diccio->validarPalabra(lexemaPalabraFormada))
+            {
+                cout<<"la palabra si existe: "<<lexemaPalabraFormada<<endl;
+
+                //darle la cantidad de fichas de la palabra
+                int  contar = 0;
+                while(contar < fichasSacadas->getTam())
+                {
+                    if(colaFichas->tamano!=0)
+                    {
+                        char letra;
+                        int punteo=0;
+                        ficha = colaFichas->dequeue();
+                        letra = ficha->letra;
+                        punteo = ficha->punteo;
+
+                        jugador1->listaFichas->insertarFinal(letra,punteo);
+
+                    }
+
+
+                    contar++;
+                }
+                insertandoPalabra(fichasSacadas->getTam(),*fichasSacadas);
+                matrizJuego->graficar();
+                system("cls");
+                cout<<"palabra Insertada "<<endl;
+                cout<<"Graficando Resultado "<<endl;
+
+            }
+                //de no ser valida la palabra formada, regresar las fichas al jugador
+                else
+                {
+                    cout<<"Regresando fichas al jugador..."<<endl;
+                    cout<<"tama;o de la lista: "<<to_string(fichasSacadas->getTam());
+                    //ciclo que regresa las fichas
+
+                    NodoListaDoble* regreso = fichasSacadas->getPrimero();
+                    int  contar = 0;
+                    while(contar < fichasSacadas->getTam())
+                    {
+                        jugador1->listaFichas->insertarFinal(regreso->letra,regreso->punteo);
+                        regreso = regreso->sig;
+                        contar++;
+                    }
+
+
+                }
+
+            }
+            else
+            {
+                //regresar las que se saquen si es que se saca alguna
+                cout<<"opcion invalida, pierdes turno"<<endl;
+                cout<<"Regresando fichas al jugador..."<<endl;
+                cout<<"tama;o de la lista: "<<to_string(fichasSacadas->getTam());
+                //ciclo que regresa las fichas
+
+                NodoListaDoble* regreso = fichasSacadas->getPrimero();
+                int  contar = 0;
+                while(contar < fichasSacadas->getTam())
+                {
+                    jugador1->listaFichas->insertarFinal(regreso->letra,regreso->punteo);
+                    regreso = regreso->sig;
+                    contar++;
+                }
+            }
+
+
+            break;
+        }
+        system("pause");
+    }
+}
+//-------------------------------------------------------------------------------------------------------------------------------------
+void Menu::insertandoPalabra(int cantidadLetras,ListaDoble& letrasColocar)
+{
+    system("cls");
+    cout<<"Mostrando Tablero: "<<endl;
+    matrizJuego->graficar();
+    system("cls");
+    system("pause");
+    int posx = 1;
+    int posy = 1;
+    cout<<"Posicion inicial x deseada: "<<endl;
+    cin>>posx;
+    cout<<"Posicion inicial y deseada: "<<endl;
+    cin>>posy;
+    cout<<"Desea un ingreso horizontal o vertical: "<<endl;
+    cout<<"1. Horizontal "<<endl;
+    cout<<"2. Vertical "<<endl;
+    int eleccion=1;
+    cin>>eleccion;
+
+    //se ingresa horizontal
+    if(eleccion==1)
+    {
+        NodoListaDoble* aux = letrasColocar.getPrimero();
+        while(aux!=0)
+        {
+            matrizJuego->insertarElemento(to_string(posy),to_string(posx),aux->punteo,aux->letra,"f");
+            //evaluar el valor de la ficha y si es doble o triple y sumarlo al conteo de puntos de ronda
+            posx++;
+            aux = aux->sig;
+        }
+
+
+    }
+    //se ingresa vertical
+    else if(eleccion==2)
+    {
+        NodoListaDoble* aux = letrasColocar.getPrimero();
+        while(aux!=0)
+        {
+            matrizJuego->insertarElemento(to_string(posy),to_string(posx),aux->punteo,aux->letra,"f");
+            //evaluar el valor de la ficha y si es doble o triple y sumarlo al conteo de puntos de ronda
+            posy++;
+            aux = aux->sig;
+        }
+
+    }
+
+}
+

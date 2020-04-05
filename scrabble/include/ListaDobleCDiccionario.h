@@ -25,6 +25,8 @@ class ListaDobleCDiccionario
         void graficar(); // metodo que realiza el reporte graphiz
         void escribir(); // escribir el archivo de texto
 
+        bool validarPalabra(string palabraAValidar); // metodo que devuelve true si la palabra existe en el diccionario
+
 
     protected:
 

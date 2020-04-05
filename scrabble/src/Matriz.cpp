@@ -138,6 +138,8 @@ NodoMatriz* Matriz::insertar_ordenado_columna(NodoMatriz* nuevo, NodoMatriz* cab
         if(a == b)
         {
             //si la posicion es ltea misma sobre escribe
+            temp->letra = nuevo->letra;
+            temp->punteo = nuevo->punteo;
             return temp;
         }
         else if(a > b)
@@ -191,6 +193,8 @@ NodoMatriz* Matriz::insertar_ordenado_fila(NodoMatriz* nuevo, NodoMatriz* cabeza
         if(a==b)
         {
             //si mes es el mismo sobre escribe
+            temp->letra = nuevo->letra;
+            temp->punteo = nuevo->punteo;
             return temp;
         }
         else if(a>b)
