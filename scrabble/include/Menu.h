@@ -35,7 +35,9 @@ class Menu
         void turnoJugador2(); //turno jugador 2
 
         void menuAuxiliarPonerFicchas();
-        void insertandoPalabra(int cantidadLetras, ListaDoble& letrasColocar); // se coloca en el tablero ya sea en posicion vertical u horizontal
+        void menuAuxiliarPonerFicchas2();
+        int insertandoPalabra(int cantidadLetras, ListaDoble& letrasColocar); // se coloca en el tablero ya sea en posicion vertical u horizontal
+        int insertandoPalabra2(int cantidadLetras, ListaDoble& letrasColocar); // se coloca en el tablero ya sea en posicion vertical u horizontal
 
 
         //objetos

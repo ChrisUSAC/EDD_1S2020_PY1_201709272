@@ -16,6 +16,7 @@ class ListaDobleCDiccionario
         bool estaVacia(); // metodo que informa si la lista esta vacia
         void imprimir(); // metodo que imprime la lista en consola
         void insertarFinal(string palabra);// metodo que inserta los nuevos nodos al final de la lista
+        void insertarFinalCoordenadaEspecial(string dobleotriple,int x, int y);// metodo que inserta los nuevos nodos al final de la lista
 
         NodoListaDobleC* primero; // puntero que indica cual es el primer nodo de la lista
         NodoListaDobleC* ultimo; // puntero que indica cual es el ultimo nodo en la lista

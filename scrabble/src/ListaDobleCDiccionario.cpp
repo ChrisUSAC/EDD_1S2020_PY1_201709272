@@ -118,6 +118,35 @@ void ListaDobleCDiccionario::insertarFinal(string palabra)
     this->tam++;
 }
 //------------------------------------------------------------------------------------------------------
+//metodo para insertar al final el nuevo nodo
+void ListaDobleCDiccionario::insertarFinalCoordenadaEspecial(string dobleotriple,int x,int y)
+{
+    //se instancia el nodo a insertar
+    NodoListaDobleC* n = new NodoListaDobleC(dobleotriple,x,y);
+    //es evalua si la lista esta vacia
+    if(estaVacia())
+    {
+        //apuntar primero y ultimo al nuevo nodo
+        this->primero = n;
+        this->ultimo = n;
+        //crear circulo
+        this->primero->ant = n;
+        this->ultimo->sig = n;
+    }
+    else
+    {
+        //si ya existe uno
+        this->ultimo->sig = n;
+        n->ant = this->ultimo;
+        this->ultimo = n;
+        this->ultimo->sig = this->primero;
+        this->primero->ant = this->ultimo;
+
+    }
+    //se aumenta el tamano de la lista
+    this->tam++;
+}
+//------------------------------------------------------------------------------------------------------
 void ListaDobleCDiccionario::graficar()
 {
     if(this->primero!=0)

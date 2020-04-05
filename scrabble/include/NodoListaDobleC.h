@@ -9,6 +9,7 @@ class NodoListaDobleC
         //metodo constructor
         NodoListaDobleC(string nombre);
         NodoListaDobleC(string palabraDiccionario,int id);
+        NodoListaDobleC(string dobleotriple,int x,int y);
 
         //metodo destructor
         virtual ~NodoListaDobleC();
@@ -19,6 +20,9 @@ class NodoListaDobleC
 
         string palabraDiccionario; // guarda las palabras del diccionario
         int id; // se le asigna un id a la palabra
+
+        int x; // casillas especiales
+        int y; //
 
 
     protected:

@@ -16,7 +16,7 @@ Archivo::~Archivo()
 }
 
 //-----------------------------------------------------------------------------------------------------------------
-void Archivo::leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
+void Archivo::leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego,ListaDobleCDiccionario& dobleotriple)
 {
 
     ifstream archivo; //variable que facilita la lectura del archivo
@@ -47,13 +47,13 @@ void Archivo::leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJueg
     archivo.close();//cierra el archivo
 
     //metodo que crea los objetos en memoria
-    guardar(jj,diccio,matrizJuego);
+    guardar(jj,diccio,matrizJuego,dobleotriple);
 
 }
 
 //-----------------------------------------------------------------------------------------------------------------
 //metodo para guardar los objetos en las estructuras
-void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
+void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego,ListaDobleCDiccionario& dobleotriple)
 {
     int dimension; //variable que guarda la dimension del tablero
     int doblex;
@@ -79,6 +79,7 @@ void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
             cout<<dobley<<endl;
             cout<<"\n"<<endl;
             matrizJuego.insertarElemento(to_string(dobley),to_string(doblex),0,' ',"doble");
+            dobleotriple.insertarFinalCoordenadaEspecial("doble",doblex,dobley);
 
 
         }
@@ -93,6 +94,7 @@ void Archivo::guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego)
             cout<<tripley<<endl;
             cout<<"\n"<<endl;
             matrizJuego.insertarElemento(to_string(tripley),to_string(triplex),0,' ',"triple");
+            dobleotriple.insertarFinalCoordenadaEspecial("triple",triplex,tripley);
 
         }
 

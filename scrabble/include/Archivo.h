@@ -16,8 +16,8 @@ class Archivo
         Archivo();
         virtual ~Archivo();
 
-        void leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego);
-        void guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego);
+        void leer(string ruta,ListaDobleCDiccionario& diccio,Matriz& matrizJuego,ListaDobleCDiccionario& dobleotriple);
+        void guardar(json j,ListaDobleCDiccionario& diccio,Matriz& matrizJuego,ListaDobleCDiccionario& dobleotriple);
 
     protected:
 

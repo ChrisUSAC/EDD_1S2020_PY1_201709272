@@ -71,10 +71,10 @@
 1585906755 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodomatriz.cpp
 	"NodoMatriz.h"
 
-1585869609 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoblec.cpp
+1586067840 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoblec.cpp
 	"NodoListaDobleC.h"
 
-1585869540 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoblec.h
+1586067645 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\nodolistadoblec.h
 	<iostream>
 
 1585946425 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblec.cpp
@@ -102,17 +102,17 @@
 1585288215 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\nodolistadoble.cpp
 	"NodoListaDoble.h"
 
-1586051301 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblecdiccionario.cpp
+1586068017 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\listadoblecdiccionario.cpp
 	"ListaDobleCDiccionario.h"
 	<iostream>
 
-1586050791 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblecdiccionario.h
+1586067974 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\listadoblecdiccionario.h
 	"NodoListaDobleC.h"
 	<iostream>
 	<fstream>
 	<cstring>
 
-1585904301 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\archivo.h
+1586068353 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\archivo.h
 	<string>
 	"json.hpp"
 	"ListaDobleCDiccionario.h"
@@ -286,16 +286,16 @@
 	<limits>
 	<type_traits>
 
-1585970372 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
+1586073988 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\archivo.cpp
 	"Archivo.h"
 	<iostream>
 	<fstream>
 	"json.hpp"
 
-1586063950 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
+1586079459 source:c:\users\cris\desktop\proyecto1\repositorio\scrabble\src\menu.cpp
 	"Menu.h"
 
-1586062071 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
+1586079166 c:\users\cris\desktop\proyecto1\repositorio\scrabble\include\menu.h
 	<iostream>
 	<stdlib.h>
 	<fstream>
