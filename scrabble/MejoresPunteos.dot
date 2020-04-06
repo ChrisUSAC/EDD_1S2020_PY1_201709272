@@ -1,0 +1,7 @@
+digraph G{ 
+rankdir=LR 
+node[ shape = box] 
+0[label = "a Puntaje: 4" width=2.0 ]; 
+1[label = "er Puntaje: 0" width=2.0 ]; 
+0 -> 1 
+}

@@ -3,13 +3,12 @@ node[ shape = box]
 Raiz[label = "Raiz", width=1.5, group = 1]; 
  
 f0[label = "1" width=2.0 , group = 1 ]; 
-f1[label = "2" width=2.0 , group = 1 ]; 
-f2[label = "5" width=2.0 , group = 1 ]; 
-f3[label = "6" width=2.0 , group = 1 ]; 
-f4[label = "7" width=2.0 , group = 1 ]; 
-f5[label = "10" width=2.0 , group = 1 ]; 
-f6[label = "15" width=2.0 , group = 1 ]; 
-f7[label = "20" width=2.0 , group = 1 ]; 
+f1[label = "5" width=2.0 , group = 1 ]; 
+f2[label = "6" width=2.0 , group = 1 ]; 
+f3[label = "7" width=2.0 , group = 1 ]; 
+f4[label = "10" width=2.0 , group = 1 ]; 
+f5[label = "15" width=2.0 , group = 1 ]; 
+f6[label = "20" width=2.0 , group = 1 ]; 
 f0 -> f1[dir = back]; 
 f0 -> f1 
 f1 -> f2[dir = back]; 
@@ -22,16 +21,13 @@ f4 -> f5[dir = back];
 f4 -> f5 
 f5 -> f6[dir = back]; 
 f5 -> f6 
-f6 -> f7[dir = back]; 
-f6 -> f7 
 c0[label = "1" width=2.0 , group = 2 ]; 
 c1[label = "2" width=2.0 , group = 3 ]; 
 c2[label = "4" width=2.0 , group = 4 ]; 
-c3[label = "5" width=2.0 , group = 5 ]; 
-c4[label = "6" width=2.0 , group = 6 ]; 
-c5[label = "7" width=2.0 , group = 7 ]; 
-c6[label = "10" width=2.0 , group = 8 ]; 
-c7[label = "15" width=2.0 , group = 9 ]; 
+c3[label = "6" width=2.0 , group = 5 ]; 
+c4[label = "7" width=2.0 , group = 6 ]; 
+c5[label = "10" width=2.0 , group = 7 ]; 
+c6[label = "15" width=2.0 , group = 8 ]; 
 c0 -> c1[dir = back]; 
 c0 -> c1 
 c1 -> c2[dir = back]; 
@@ -44,109 +40,64 @@ c4 -> c5[dir = back];
 c4 -> c5 
 c5 -> c6[dir = back]; 
 c5 -> c6 
-c6 -> c7[dir = back]; 
-c6 -> c7 
  Raiz -> f0 [dir = back];  
  Raiz -> f0 ; 
  Raiz -> c0 [dir = back]; 
  Raiz -> c0 ; 
-{rank = same;Raiz;c0;c1;c2;c3;c4;c5;c6;c7;} 
-n0[label = "t" width = 1.5, group =2]; 
-n0[label = "t" width = 1.5, group =2]; 
-n1[label = "e" width = 1.5, group =2]; 
-n1[label = "e" width = 1.5, group =2]; 
-n2[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =2]; 
-n2[label = " " width = 1.5, group =2]; 
-n3[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =3]; 
-n3[label = " " width = 1.5, group =3]; 
-n4[label = "t" width = 1.5,fillcolor = lightskyblue,style = filled,group =4]; 
-n4[label = "t" width = 1.5, group =4]; 
-n5[label = "s" width = 1.5, group =4]; 
-n5[label = "s" width = 1.5, group =4]; 
-n6[label = "s" width = 1.5, group =5]; 
-n6[label = "s" width = 1.5, group =5]; 
-n7[label = "e" width = 1.5, group =5]; 
-n7[label = "e" width = 1.5, group =5]; 
-n8[label = "i" width = 1.5, group =5]; 
-n8[label = "i" width = 1.5, group =5]; 
-n9[label = "i" width = 1.5, group =6]; 
-n9[label = "i" width = 1.5, group =6]; 
-n10[label = "n" width = 1.5,fillcolor = red,style = filled, group =6]; 
-n10[label = "n" width = 1.5, group =6]; 
-n11[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =7]; 
-n11[label = " " width = 1.5, group =7]; 
-n12[label = "o" width = 1.5, group =7]; 
-n12[label = "o" width = 1.5, group =7]; 
-n13[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =8]; 
-n13[label = " " width = 1.5, group =8]; 
-n14[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =9]; 
-n14[label = " " width = 1.5, group =9]; 
+{rank = same;Raiz;c0;c1;c2;c3;c4;c5;c6;} 
+n0[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =2]; 
+n0[label = " " width = 1.5, group =2]; 
+n1[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =3]; 
+n1[label = " " width = 1.5, group =3]; 
+n2[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =4]; 
+n2[label = " " width = 1.5, group =4]; 
+n3[label = "s" width = 1.5,fillcolor = red,style = filled, group =5]; 
+n3[label = "s" width = 1.5, group =5]; 
+n4[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =6]; 
+n4[label = " " width = 1.5, group =6]; 
+n5[label = "i" width = 1.5, group =6]; 
+n5[label = "i" width = 1.5, group =6]; 
+n6[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =7]; 
+n6[label = " " width = 1.5, group =7]; 
+n7[label = " " width = 1.5,fillcolor = lightskyblue,style = filled,group =8]; 
+n7[label = " " width = 1.5, group =8]; 
 c0 -> n0 [dir = back];  
 c0 -> n0
-n0 -> n1 [dir = back];  
-n0 -> n1
-n1 -> n2 [dir = back];  
-n1 -> n2
-c1 -> n3 [dir = back];  
-c1 -> n3
-c2 -> n4 [dir = back];  
-c2 -> n4
+c1 -> n1 [dir = back];  
+c1 -> n1
+c2 -> n2 [dir = back];  
+c2 -> n2
+c3 -> n3 [dir = back];  
+c3 -> n3
+c4 -> n4 [dir = back];  
+c4 -> n4
 n4 -> n5 [dir = back];  
 n4 -> n5
-c3 -> n6 [dir = back];  
-c3 -> n6
-n6 -> n7 [dir = back];  
-n6 -> n7
-n7 -> n8 [dir = back];  
-n7 -> n8
-c4 -> n9 [dir = back];  
-c4 -> n9
-n9 -> n10 [dir = back];  
-n9 -> n10
-c5 -> n11 [dir = back];  
-c5 -> n11
-n11 -> n12 [dir = back];  
-n11 -> n12
-c6 -> n13 [dir = back];  
-c6 -> n13
-c7 -> n14 [dir = back];  
-c7 -> n14
-f0 -> n0 [dir = back];  
-f0 -> n0
+c5 -> n6 [dir = back];  
+c5 -> n6
+c6 -> n7 [dir = back];  
+c6 -> n7
 f1 -> n1 [dir = back];  
 f1 -> n1
-n1 -> n6 [dir = back];  
-n1 -> n6
-n6 -> n9 [dir = back];  
-n6 -> n9
-f2 -> n3 [dir = back];  
-f2 -> n3
-f3 -> n2 [dir = back];  
-f3 -> n2
-f4 -> n11 [dir = back];  
-f4 -> n11
-f5 -> n4 [dir = back];  
-f5 -> n4
-n4 -> n7 [dir = back];  
-n4 -> n7
-n7 -> n10 [dir = back];  
-n7 -> n10
-n10 -> n12 [dir = back];  
-n10 -> n12
-f6 -> n5 [dir = back];  
-f6 -> n5
-n5 -> n8 [dir = back];  
-n5 -> n8
-n8 -> n13 [dir = back];  
-n8 -> n13
-f7 -> n14 [dir = back];  
-f7 -> n14
-{rank = same;f0;n0;} 
-{rank = same;f1;n1;n6;n9;} 
-{rank = same;f2;n3;} 
-{rank = same;f3;n2;} 
-{rank = same;f4;n11;} 
-{rank = same;f5;n4;n7;n10;n12;} 
-{rank = same;f6;n5;n8;n13;} 
-{rank = same;f7;n14;} 
+f2 -> n0 [dir = back];  
+f2 -> n0
+f3 -> n4 [dir = back];  
+f3 -> n4
+f4 -> n2 [dir = back];  
+f4 -> n2
+n2 -> n3 [dir = back];  
+n2 -> n3
+n3 -> n5 [dir = back];  
+n3 -> n5
+f5 -> n6 [dir = back];  
+f5 -> n6
+f6 -> n7 [dir = back];  
+f6 -> n7
+{rank = same;f0;} 
+{rank = same;f1;n1;} 
+{rank = same;f2;n0;} 
+{rank = same;f3;n4;} 
+{rank = same;f4;n2;n3;n5;} 
+{rank = same;f5;n6;} 
+{rank = same;f6;n7;} 
 }

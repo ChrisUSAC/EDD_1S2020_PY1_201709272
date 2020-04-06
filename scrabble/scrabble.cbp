@@ -42,12 +42,16 @@
 		<Unit filename="include/ListaDoble.h" />
 		<Unit filename="include/ListaDobleC.h" />
 		<Unit filename="include/ListaDobleCDiccionario.h" />
+		<Unit filename="include/ListaJugador.h" />
+		<Unit filename="include/ListaSRecorrido.h" />
 		<Unit filename="include/Matriz.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/NodoCola.h" />
 		<Unit filename="include/NodoLista.h" />
 		<Unit filename="include/NodoListaDoble.h" />
 		<Unit filename="include/NodoListaDobleC.h" />
+		<Unit filename="include/NodoListaJugador.h" />
+		<Unit filename="include/NodoListaSRecorrido.h" />
 		<Unit filename="include/NodoMatriz.h" />
 		<Unit filename="include/nodoABB.h" />
 		<Unit filename="main.cpp" />
@@ -59,12 +63,16 @@
 		<Unit filename="src/ListaDoble.cpp" />
 		<Unit filename="src/ListaDobleC.cpp" />
 		<Unit filename="src/ListaDobleCDiccionario.cpp" />
+		<Unit filename="src/ListaJugador.cpp" />
+		<Unit filename="src/ListaSRecorrido.cpp" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/NodoCola.cpp" />
 		<Unit filename="src/NodoLista.cpp" />
 		<Unit filename="src/NodoListaDoble.cpp" />
 		<Unit filename="src/NodoListaDobleC.cpp" />
+		<Unit filename="src/NodoListaJugador.cpp" />
+		<Unit filename="src/NodoListaSRecorrido.cpp" />
 		<Unit filename="src/NodoMatriz.cpp" />
 		<Unit filename="src/nodoABB.cpp" />
 		<Extensions>

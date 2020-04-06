@@ -12,6 +12,15 @@ ListaDobleCDiccionario::ListaDobleCDiccionario()
 
 }
 //------------------------------------------------------------------------------------------------------
+void ListaDobleCDiccionario::resetear()
+{
+    this->primero = 0;
+    this->ultimo = 0;
+    this->tam  = 0;
+    this->id = 0;
+}
+
+//------------------------------------------------------------------------------------------------------
 //metodo destructor
 ListaDobleCDiccionario::~ListaDobleCDiccionario()
 {

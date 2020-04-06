@@ -4,7 +4,6 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
-
 using namespace std;
 
 class Lista

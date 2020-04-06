@@ -9,7 +9,6 @@ Cola::Cola()
     this->ultimo=0;
     this->tamano=0;
 
-    llenadoInicial(); // llenado de fichas a la cola aleatorio
 }
 
 Cola::~Cola()
@@ -380,6 +379,13 @@ void Cola::llenadoInicial()
     insertarAleatorio(10,'z');
 
 
+}
+//----------------------------------------------------------------------------------
+void Cola::resetear()
+{
+    this->primero=0;
+    this->ultimo=0;
+    this->tamano=0;
 }
 
 

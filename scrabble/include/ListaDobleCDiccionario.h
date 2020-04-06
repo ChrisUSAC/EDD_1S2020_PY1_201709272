@@ -28,6 +28,8 @@ class ListaDobleCDiccionario
 
         bool validarPalabra(string palabraAValidar); // metodo que devuelve true si la palabra existe en el diccionario
 
+        void resetear(); // resetea las palabras del diccionario
+
 
     protected:
 

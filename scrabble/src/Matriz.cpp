@@ -9,6 +9,14 @@ Matriz::Matriz()
     this->idMatriz = "Raiz";
 }
 //------------------------------------------------------------------------------------------------------
+void Matriz::resetear()
+{
+    //se pone el puntero raiz sobre este nodo
+    this->raiz=new NodoMatriz("0","0","raiz");
+    this->idMatriz = "Raiz";
+}
+
+//------------------------------------------------------------------------------------------------------
 //metodo destructor
 Matriz::~Matriz()
 {
@@ -325,7 +333,7 @@ void Matriz::escribir()
 
                 //archivo<<"f"+identificadorr+"[label = " + "\"" + aux->fila + "\"" + " width=2.0 , group = 1 ];" + " \n";
                 aux->mensaje = "f"+identificadorr; // se le mete al nodo en el atributo mensaje el identificador unico
-                cout<<"aux->mensaje+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++: "<<aux->mensaje<<endl;
+                //cout<<"aux->mensaje+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++: "<<aux->mensaje<<endl;
                 aux = aux->abajo;
                 id++;
             }
@@ -356,7 +364,7 @@ void Matriz::escribir()
                 string idauxx = std::to_string(idaux);
                 archivo<<"c"+identificadorr+"[label = " + "\"" + aux3->col + "\"" + " width=2.0 , group = "+idauxx+" ];" + " \n";
                 aux3->mensaje = "c"+identificadorr; // se le mete al nodo en el atributo mensaje el identificador unico
-                cout<<"aux3->mensaje+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++: "<<aux3->mensaje<<endl;
+                //cout<<"aux3->mensaje+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++: "<<aux3->mensaje<<endl;
 
                 aux3 = aux3->sig;
                 id3++;
@@ -383,10 +391,10 @@ void Matriz::escribir()
             archivo<<" Raiz -> c0 [dir = back]; \n";
             archivo<<" Raiz -> c0 ; \n";
 
-            cout<<"contador de filas id:";
-            cout<<id<<endl;
-            cout<<"contador de columnas id3:";
-            cout<<id3<<endl;
+            //cout<<"contador de filas id:";
+            //cout<<id<<endl;
+            //cout<<"contador de columnas id3:";
+            //cout<<id3<<endl;
             id--; // para que tenga el indice de la fila
 //--------------------------------------------------------------------------------------------------------------------------------
 
@@ -411,12 +419,12 @@ void Matriz::escribir()
         int grupC = 2;
 
 		NodoMatriz* columna = this->raiz->sig;
-		cout<<"entrara al primer while"<<endl;
-		cout<<"eentres de entrar al while correColumna: "<<correColumna<<endl;
-		cout<<"id3 antes del while "<<id3<<endl;
+		//cout<<"entrara al primer while"<<endl;
+		//cout<<"eentres de entrar al while correColumna: "<<correColumna<<endl;
+		//cout<<"id3 antes del while "<<id3<<endl;
 
 		while (correColumna <= id3) {
-			cout << "columna->col "<< columna->col << " , "<< "columna->mfila " << columna->fila << endl;
+			//cout << "columna->col "<< columna->col << " , "<< "columna->mfila " << columna->fila << endl;
 
 			NodoMatriz* dato = columna->abajo;
 			while (dato != 0) {
@@ -442,12 +450,12 @@ void Matriz::escribir()
 
                 archivo<<"n"+iden+"[label = "+ "\"" +dato->letra+ "\"" +" width = 1.5, group ="+corrc+"]; \n"; // esta linea esta bien
                 dato->mensaje = "n"+iden; // se le mete al nodo en el atributo mensaje el identificador unico
-                cout<<"dato->mensaje: //////////////////////////////////////////////////////////////////////////////////////// "<<dato->mensaje<<endl;
+                //cout<<"dato->mensaje: //////////////////////////////////////////////////////////////////////////////////////// "<<dato->mensaje<<endl;
                 //archivo<<"c"+corrc2+" -> n"+iden+" [dir = back];  \n";
                 //archivo<<"c"+corrc2+" -> n"+iden+"\n";
 
 
-				cout << "dato->col "<< dato->col << " , "<< "dato->fila " << dato->fila << " , " << "dato->letra "<< dato->letra << endl;
+				//cout << "dato->col "<< dato->col << " , "<< "dato->fila " << dato->fila << " , " << "dato->letra "<< dato->letra << endl;
 
 				dato = dato->abajo;
 				idNodo++;
@@ -467,7 +475,7 @@ void Matriz::escribir()
 
         //idNodo ya tiene el numero de nodos que se metio a la matriz es decir los elementos
 
-        cout<<"entrara al ultimo while"<<endl;
+        //cout<<"entrara al ultimo while"<<endl;
 		NodoMatriz* columnaa = this->raiz->sig;
 		while (columnaa != 0)
         {
@@ -476,8 +484,8 @@ void Matriz::escribir()
             {
                 if(datooo->abajo!=0)
                 {
-                cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
-                cout<<"datooo->abajo->mensaje: "<<datooo->abajo->mensaje<<endl;
+                //cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
+                //cout<<"datooo->abajo->mensaje: "<<datooo->abajo->mensaje<<endl;
                 archivo<<datooo->mensaje+" -> "+datooo->abajo->mensaje+" [dir = back];  \n";
                 archivo<<datooo->mensaje+" -> "+datooo->abajo->mensaje+"\n";
 
@@ -493,7 +501,7 @@ void Matriz::escribir()
 
 //--------------------------------------------------------------------------------------------------------------------------------
 //enlaces horizontales
-        cout<<"entrara al ultimo while"<<endl;
+        //cout<<"entrara al ultimo while"<<endl;
 		NodoMatriz* columnaaa = this->raiz->abajo;
 		while (columnaaa != 0)
         {
@@ -503,8 +511,8 @@ void Matriz::escribir()
             {
                 if(datooo->sig!=0)
                 {
-                cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
-                cout<<"datooo->abajo->mensaje: "<<datooo->sig->mensaje<<endl;
+                //cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
+                //cout<<"datooo->abajo->mensaje: "<<datooo->sig->mensaje<<endl;
                 archivo<<datooo->mensaje+" -> "+datooo->sig->mensaje+" [dir = back];  \n";
                 archivo<<datooo->mensaje+" -> "+datooo->sig->mensaje+"\n";
 
@@ -518,7 +526,7 @@ void Matriz::escribir()
 		}
 //--------------------------------------------------------------------------------------------------------------------------------
 
-        cout<<"entrara al ultimo while"<<endl;
+        //cout<<"entrara al ultimo while"<<endl;
 		NodoMatriz* columnaaz = this->raiz->abajo;
 		while (columnaaz != 0)
         {
@@ -526,7 +534,7 @@ void Matriz::escribir()
 			NodoMatriz* datooo = columnaaz;
 			while (datooo != 0)
             {
-                cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
+                //cout<<"datooo->mensaje: "<<datooo->mensaje<<endl;
                 rank += datooo->mensaje+";";
                 datooo = datooo->sig;
 

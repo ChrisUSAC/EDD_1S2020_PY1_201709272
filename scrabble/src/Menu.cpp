@@ -14,8 +14,16 @@ Jugador* jugador2 = new Jugador(); // objeto con el que jugara el jugador 2
 
 Cola* colaFichas = new Cola(); // listado de fichas del juego
 
+ListaJugador* Players = new ListaJugador(); // almacena los jugadores con partidas, sus score y sus listas de juegos
+
+ListaSRecorrido* Recorrido = new ListaSRecorrido();
+
+
 //variables globales para tener a los jugadores
 
+string ultimoArchivoCargado = "c.json"; //se creo uno por defecto para el inicio de las partidas, si es que no se cargo ningun archivo
+
+int primeraPartida = 0; // si es 0 no guarda a jugadores al iniciar partida
 
 Menu::Menu()
 {
@@ -33,6 +41,8 @@ Menu::~Menu()
 //-----------------------------------------------------------------------------------------------------
 void Menu::menu_inicial()
 {
+
+
     bool bandera = true;
     char opcion[40]; // variable que lee la opcion seleccinada por el usuario
     int seleccion =0;
@@ -70,9 +80,10 @@ void Menu::menu_inicial()
             menu_juego();
             break;
         case '3':
-            bandera = false;
             system("cls"); //Clear console.//
             cout<<"Opcion 3";
+            menu_reportes();
+
             break;
         case '4':
             bandera = false;
@@ -119,6 +130,11 @@ void Menu::menu_cargaArchivo()
             //ir al menu a pedir nombre del archivo
             cout<<"Nombre del archivo .json: ";
             cin>>nombreArchivo;
+            ultimoArchivoCargado = nombreArchivo; // se le guarda el ultimo archivo cargado
+            //reseteo de palabras por si se cargan nuevos archivos
+            diccio->resetear();
+            diccioCordenadas->resetear();
+            matrizJuego->resetear();
             archivo->leer(nombreArchivo,*diccio,*matrizJuego,*diccioCordenadas);
             break;
         case '2':
@@ -136,6 +152,108 @@ void Menu::menu_cargaArchivo()
     while(bandera);
 
 }
+//-----------------------------------------------------------------------------------------------------
+void Menu::menu_reportes()
+{
+    bool bandera = true;
+    char opcion[40]; // variable que lee la opcion seleccinada por el usuario
+    int seleccion =0;
+
+    system("cls"); //clear console.//
+
+    do
+    {
+
+        cout << "--------- Reportes Aplicacion ---------" << endl;
+        cout<<"1- Diccionario Palabras."<<endl;
+        cout<<"2- Cola de fichas Disponibles."<<endl;
+        cout<<"3- Arbol binario de busqueda."<<endl;
+        cout<<"4- Recorridos Arbol."<<endl;
+        cout<<"5- Historial de Puntajes Jugadores con Partidas Terminadas."<<endl;
+        cout<<"6- Top Punteos."<<endl;
+        cout<<"7- Tablero de Juego."<<endl;
+        cout<<"8. Fichas Jugadores En Partida"<<endl;
+        cout<<"9. Regresar. "<<endl;
+
+
+        cout<<"Seleccione una Opcion: ";
+        cin >> opcion;
+        cin.ignore(); // limpia e buffer de entrada
+        seleccion = opcion[0];
+        switch(seleccion)
+        {
+        case '1':
+            system("cls"); //Clear console.//
+            diccio->graficar();
+            break;
+        case '2':
+            system("cls"); //Clear console.//
+            colaFichas->graficar();
+            cout<<"Tamano cola de fichas: "<<endl;
+            cout<<to_string(colaFichas->tamano)<<endl;
+            system("pause"); //pause
+            system("cls"); //Clear console.//
+            break;
+        case '3':
+            system("cls"); //Clear console.//
+            arbol->graph();
+            system("pause"); //pause
+            break;
+        case '4':
+            system("cls"); //Clear console.//
+            cout<<"Recorrido Preorder"<<endl;
+            arbol->preorder();
+            cout<<endl;
+            system("pause");
+            cout<<"Recorrido inorder"<<endl;
+            arbol->inorder();
+            cout<<endl;
+            system("pause");
+            cout<<"Recorrido postorder"<<endl;
+            arbol->postorder();
+            cout<<endl;
+            system("pause");
+            system("cls"); //Clear console.//
+            break;
+        case '5':
+            system("cls"); //Clear console.//
+            break;
+        case '6':
+            system("cls"); //Clear console.//
+            Players->imprimir();
+            system("pause");
+            Players->graficar();
+            break;
+        case '7':
+            system("cls"); //Clear console.//
+            matrizJuego->graficar();
+            break;
+        case '8':
+            system("cls"); //Clear console.//
+            cout<<"Fichas jugador1: "<<jugador1->nombrejugador<<endl;
+            jugador1->listaFichas->graficar();
+            system("pause"); //pause
+            cout<<"Fichas jugador2: "<<jugador2->nombrejugador<<endl;
+            jugador2->listaFichas->graficar();
+            system("pause"); //pause
+            system("cls"); //Clear console.//
+            break;
+        case '9':
+            system("cls"); //Clear console.//
+            bandera = false;
+            break;
+        default:
+            cout << "---------------------------------------" << endl;
+            cout << "------- ERROR:  opcion invalida--------" << endl;
+            cout << "---------------------------------------" << endl;
+            break;
+        }
+
+    }
+    while(bandera);
+
+}
+
 //-----------------------------------------------------------------------------------------------------
 void Menu::menu_juego()
 {
@@ -216,6 +334,17 @@ void Menu::menu_juego()
             }
             else
             {
+
+                jugador1->resetearjugador();
+                jugador2->resetearjugador();
+                //reseteo de palabras por si se cargan nuevos archivos
+                diccio->resetear();
+                diccioCordenadas->resetear();
+                matrizJuego->resetear();
+                archivo->leer(ultimoArchivoCargado,*diccio,*matrizJuego,*diccioCordenadas);
+                //antes de iniciar el juego se resetea
+                colaFichas->resetear(); // resetea la cola anterior por si acabo una partida
+                colaFichas->llenadoInicial(); // llena la lista de fichas por si hay una partida nueva
                 menu_IniciarJuego();
                 menu_inicial();
 
@@ -370,7 +499,80 @@ void Menu::menu_IniciarJuego()
 
 
     }
-    //termino la partida
+
+//-----------------------------------------------------------------------------------------
+        //termino la partida
+if(jugador1->punteoAcumulado > jugador2->punteoAcumulado)
+{
+    cout<<"Felicidades Gano: "<<jugador1->nombrejugador<<" Total Puntos: "<<to_string(jugador1->punteoAcumulado)<<endl;
+    system("pause");
+}
+else if(jugador2->punteoAcumulado > jugador1->punteoAcumulado)
+{
+    cout<<"Felicidades Gano: "<<jugador2->nombrejugador<<" Total Puntos: "<<to_string(jugador2->punteoAcumulado)<<endl;
+    system("pause");
+}
+else
+{
+    cout<<"Resultado... Empate. "<<endl;
+    system("pause");
+}
+
+
+        //guardar a los de la primera partida
+                //si es la primera partida
+                if(primeraPartida==0)
+                {
+                    cout<<"Primera Partida//// a guardarlos "<<endl;
+                    system("pause");
+                    jugador1->puntajesIndividual->insertar(jugador1->nombrejugador,jugador1->punteoAcumulado);
+                    jugador2->puntajesIndividual->insertar(jugador2->nombrejugador,jugador2->punteoAcumulado);
+                    Players->insertarJugador(jugador1,jugador1->nombrejugador);
+                    Players->insertarJugador(jugador2,jugador2->nombrejugador);
+
+                }else
+                {
+                    jugador1->puntajesIndividual->insertar(jugador1->nombrejugador,jugador1->punteoAcumulado);
+
+                    jugador2->puntajesIndividual->insertar(jugador2->nombrejugador,jugador2->punteoAcumulado);
+
+                    //evaluar si existe ya algun jugador con ese nombre
+                    NodoListaJugador* existe = Players->existeJugador(jugador1->nombrejugador);
+
+                    if(existe!=0)
+                    {
+                        cout<<"ya existe el jugador"<<endl;
+                        system("pause");
+
+                        existe->jugador->puntajesIndividual = jugador1->puntajesIndividual;
+
+                    }
+                    else
+                    {
+                    Players->insertarJugador(jugador1,jugador1->nombrejugador);
+
+                    }
+
+                    //evaluar si existe ya algun jugador con ese nombre
+                    NodoListaJugador* existe2 = Players->existeJugador(jugador2->nombrejugador);
+
+                    if(existe2!=0)
+                    {
+                        cout<<"ya existe el jugador2"<<endl;
+                        system("pause");
+                        existe2->jugador->puntajesIndividual = jugador2->puntajesIndividual;
+
+                    }
+                    else
+                    {
+                    Players->insertarJugador(jugador2,jugador2->nombrejugador);
+
+                    }
+
+                }
+
+        primeraPartida+=1;
+
     //guardar en lista jugadores, resetear listas correspondientes y dejar a jugadores para futuros usos
 }
 //--------------------------------------------------------------------------------------------------

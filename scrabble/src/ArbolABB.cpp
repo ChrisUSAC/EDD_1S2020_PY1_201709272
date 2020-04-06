@@ -59,35 +59,7 @@ void ArbolABB::recursive_add(nodoABB *raiz_actual, nodoABB *nuevo)
         }
     }
 }
-//------------------------------------------------------------------------------------------------------------------------------------
-void ArbolABB::inorder()
-{
-    if(!empty_arbol())
-    {
-        recursive_inorder(root);
-    }
-}
-//------------------------------------------------------------------------------------------------------------------------------------
-void ArbolABB::recursive_inorder(nodoABB *actual)
-{
-    if(!empty_arbol())
-    {
-        //IZQUIERDA
-        if(actual->izquierda != 0)
-        {
-            recursive_inorder(actual->izquierda);
-        }
 
-        //RAIZ
-        cout << "-. " << actual->nombreJugador << endl;
-
-        //DERECHA
-        if(actual->derecha != 0)
-        {
-            recursive_inorder(actual->derecha);
-        }
-    }
-}
 //------------------------------------------------------------------------------------------------------------------------------------
 bool ArbolABB::empty_arbol()
 {
@@ -215,3 +187,96 @@ void ArbolABB::graph_arbol(string &arbolGraph, nodoABB *actual)
     }
 }
 //------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::inorder()
+{
+    if(!empty_arbol())
+    {
+        recursive_inorder(root);
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::recursive_inorder(nodoABB *actual)
+{
+    if(!empty_arbol())
+    {
+        //IZQUIERDA
+        if(actual->izquierda != 0)
+        {
+            recursive_inorder(actual->izquierda);
+        }
+
+        //RAIZ
+        cout << " [ " << actual->nombreJugador <<" ]->" ;
+
+        //DERECHA
+        if(actual->derecha != 0)
+        {
+            recursive_inorder(actual->derecha);
+        }
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::preorder()
+{
+    if(!empty_arbol())
+    {
+        recursive_preorder(root);
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::recursive_preorder(nodoABB *actual)
+{
+    if(!empty_arbol())
+    {
+        //RAIZ
+        cout << " [ " << actual->nombreJugador <<" ]->" ;
+
+        //IZQUIERDA
+
+        if(actual->izquierda != 0)
+        {
+            recursive_preorder(actual->izquierda);
+        }
+
+
+
+        //DERECHA
+        if(actual->derecha != 0)
+        {
+            recursive_preorder(actual->derecha);
+        }
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::postorder()
+{
+    if(!empty_arbol())
+    {
+        recursive_postorder(root);
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------------------
+void ArbolABB::recursive_postorder(nodoABB *actual)
+{
+    if(!empty_arbol())
+    {
+
+
+        //IZQUIERDA
+
+        if(actual->izquierda != 0)
+        {
+            recursive_postorder(actual->izquierda);
+        }
+
+
+        //DERECHA
+        if(actual->derecha != 0)
+        {
+            recursive_postorder(actual->derecha);
+        }
+        //RAIZ
+        cout << " [ " << actual->nombreJugador <<" ]->" ;
+    }
+}

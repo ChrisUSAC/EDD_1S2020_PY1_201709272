@@ -18,6 +18,8 @@ class Matriz
         //metodo destructor
         virtual ~Matriz();
 
+        void resetear(); // metodo que resetea la matriz
+
         //puntero de raiz
         NodoMatriz* raiz;
 

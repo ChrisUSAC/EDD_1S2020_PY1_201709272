@@ -13,7 +13,6 @@ class NodoLista
         virtual ~NodoLista();
         NodoLista* siguiente; //puntero al siguiente nodo
 
-
         //getters
         string getnombreJugador();
         int getpuntajeJugador();

@@ -19,6 +19,11 @@
 #include "Jugador.h"
 #include "NodoListaDoble.h"
 
+#include "ListaJugador.h" // lista que sirve para el top y para puntajes individuales
+#include "NodoListaJugador.h"
+
+#include "ListaSRecorrido.h"
+
 using namespace std;
 
 class Menu
@@ -29,6 +34,7 @@ class Menu
         void menu_inicial(); // menu que pide la carga del archivo al iniciar la aplicacion
         void menu_cargaArchivo(); // menu principal del juego,
         void menu_juego(); //menu donde permite crear jugadores, seleccionar jugadores para la partida y iniciar juego
+        void menu_reportes(); // menu que despliega los reportes de la ultima partida jugada
 
         void menu_IniciarJuego(); // menu donde se seleeccionan los dos jugadores a participar
         void turnoJugador1(); //turno jugador 1

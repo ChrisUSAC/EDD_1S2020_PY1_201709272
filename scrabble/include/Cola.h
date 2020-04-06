@@ -32,6 +32,7 @@ class Cola
         void insertarAleatorio(int punteo,char letra); // metodo que inserta en posicion random de la lista
 
         void llenadoInicial(); // metodo que llena la cola aleatoriamente con las fichas
+        void resetear(); // borra la cola de fichas
     protected:
 
     private:
