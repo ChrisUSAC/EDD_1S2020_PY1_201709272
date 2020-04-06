@@ -1,0 +1,517 @@
+digraph G{ 
+rankdir=LR 
+node[ shape = box] 
+0[label = "hola" width=2.0 ]; 
+1[label = "you" width=2.0 ]; 
+2[label = "tu" width=2.0 ]; 
+3[label = "dios" width=2.0 ]; 
+4[label = "foca" width=2.0 ]; 
+5[label = "devil" width=2.0 ]; 
+6[label = "cola" width=2.0 ]; 
+7[label = "ala" width=2.0 ]; 
+8[label = "zeta" width=2.0 ]; 
+9[label = "feel" width=2.0 ]; 
+10[label = "ahora" width=2.0 ]; 
+11[label = "rojo" width=2.0 ]; 
+12[label = "rola" width=2.0 ]; 
+13[label = "ver" width=2.0 ]; 
+14[label = "eco" width=2.0 ]; 
+15[label = "see" width=2.0 ]; 
+16[label = "filo" width=2.0 ]; 
+17[label = "and" width=2.0 ]; 
+18[label = "xnor" width=2.0 ]; 
+19[label = "abduzcan" width=2.0 ]; 
+20[label = "leche" width=2.0 ]; 
+21[label = "leer" width=2.0 ]; 
+22[label = "raja" width=2.0 ]; 
+23[label = "rico" width=2.0 ]; 
+24[label = "forte" width=2.0 ]; 
+25[label = "ayer" width=2.0 ]; 
+26[label = "lost" width=2.0 ]; 
+27[label = "boss" width=2.0 ]; 
+28[label = "walk" width=2.0 ]; 
+29[label = "row" width=2.0 ]; 
+30[label = "box" width=2.0 ]; 
+31[label = "table" width=2.0 ]; 
+32[label = "malone" width=2.0 ]; 
+33[label = "fire" width=2.0 ]; 
+34[label = "six" width=2.0 ]; 
+35[label = "let" width=2.0 ]; 
+36[label = "hell" width=2.0 ]; 
+37[label = "water" width=2.0 ]; 
+38[label = "grammy" width=2.0 ]; 
+39[label = "are" width=2.0 ]; 
+40[label = "am" width=2.0 ]; 
+41[label = "love" width=2.0 ]; 
+42[label = "medic" width=2.0 ]; 
+43[label = "feather" width=2.0 ]; 
+44[label = "trust" width=2.0 ]; 
+45[label = "wife" width=2.0 ]; 
+46[label = "song" width=2.0 ]; 
+47[label = "blame" width=2.0 ]; 
+48[label = "city" width=2.0 ]; 
+49[label = "angels" width=2.0 ]; 
+50[label = "house" width=2.0 ]; 
+51[label = "sun" width=2.0 ]; 
+52[label = "again" width=2.0 ]; 
+53[label = "beauty" width=2.0 ]; 
+54[label = "where" width=2.0 ]; 
+55[label = "donde" width=2.0 ]; 
+56[label = "cuando" width=2.0 ]; 
+57[label = "romeo" width=2.0 ]; 
+58[label = "sol" width=2.0 ]; 
+59[label = "wrong" width=2.0 ]; 
+60[label = "señorita" width=2.0 ]; 
+61[label = "clear" width=2.0 ]; 
+62[label = "mama" width=2.0 ]; 
+63[label = "gonna" width=2.0 ]; 
+64[label = "want" width=2.0 ]; 
+65[label = "alone" width=2.0 ]; 
+66[label = "color" width=2.0 ]; 
+67[label = "eyes" width=2.0 ]; 
+68[label = "ojos" width=2.0 ]; 
+69[label = "shade" width=2.0 ]; 
+70[label = "shadow" width=2.0 ]; 
+71[label = "moses" width=2.0 ]; 
+72[label = "time" width=2.0 ]; 
+73[label = "momento" width=2.0 ]; 
+74[label = "tiempo" width=2.0 ]; 
+75[label = "end" width=2.0 ]; 
+76[label = "ser" width=2.0 ]; 
+77[label = "humano" width=2.0 ]; 
+78[label = "sound" width=2.0 ]; 
+79[label = "close" width=2.0 ]; 
+80[label = "cerca" width=2.0 ]; 
+81[label = "far" width=2.0 ]; 
+82[label = "lejos" width=2.0 ]; 
+83[label = "left" width=2.0 ]; 
+84[label = "right" width=2.0 ]; 
+85[label = "crecer" width=2.0 ]; 
+86[label = "vida" width=2.0 ]; 
+87[label = "life" width=2.0 ]; 
+88[label = "ir" width=2.0 ]; 
+89[label = "buscar" width=2.0 ]; 
+90[label = "amor" width=2.0 ]; 
+91[label = "dumb" width=2.0 ]; 
+92[label = "money" width=2.0 ]; 
+93[label = "dinero" width=2.0 ]; 
+94[label = "go" width=2.0 ]; 
+95[label = "burn" width=2.0 ]; 
+96[label = "broke" width=2.0 ]; 
+97[label = "quemar" width=2.0 ]; 
+98[label = "queso" width=2.0 ]; 
+99[label = "people" width=2.0 ]; 
+100[label = "persona" width=2.0 ]; 
+101[label = "down" width=2.0 ]; 
+102[label = "new" width=2.0 ]; 
+103[label = "logic" width=2.0 ]; 
+104[label = "binary" width=2.0 ]; 
+105[label = "tree" width=2.0 ]; 
+106[label = "young" width=2.0 ]; 
+107[label = "vibe" width=2.0 ]; 
+108[label = "fight" width=2.0 ]; 
+109[label = "yo" width=2.0 ]; 
+110[label = "well" width=2.0 ]; 
+111[label = "defeat" width=2.0 ]; 
+112[label = "now" width=2.0 ]; 
+113[label = "vicious" width=2.0 ]; 
+114[label = "damn" width=2.0 ]; 
+115[label = "fe" width=2.0 ]; 
+116[label = "mar" width=2.0 ]; 
+117[label = "el" width=2.0 ]; 
+118[label = "ese" width=2.0 ]; 
+119[label = "pez" width=2.0 ]; 
+120[label = "eso" width=2.0 ]; 
+121[label = "voy" width=2.0 ]; 
+122[label = "va" width=2.0 ]; 
+123[label = "mira" width=2.0 ]; 
+124[label = "ela" width=2.0 ]; 
+125[label = "ana" width=2.0 ]; 
+126[label = "red" width=2.0 ]; 
+127[label = "ano" width=2.0 ]; 
+128[label = "fuck" width=2.0 ]; 
+129[label = "crap" width=2.0 ]; 
+130[label = "roto" width=2.0 ]; 
+131[label = "roca" width=2.0 ]; 
+132[label = "ola" width=2.0 ]; 
+133[label = "alu" width=2.0 ]; 
+134[label = "robo" width=2.0 ]; 
+135[label = "nena" width=2.0 ]; 
+136[label = "baby" width=2.0 ]; 
+137[label = "reta" width=2.0 ]; 
+138[label = "papa" width=2.0 ]; 
+139[label = "te" width=2.0 ]; 
+140[label = "uno" width=2.0 ]; 
+141[label = "dos" width=2.0 ]; 
+142[label = "we" width=2.0 ]; 
+143[label = "si" width=2.0 ]; 
+144[label = "yes" width=2.0 ]; 
+145[label = "no" width=2.0 ]; 
+146[label = "now" width=2.0 ]; 
+147[label = "bad" width=2.0 ]; 
+148[label = "guy" width=2.0 ]; 
+149[label = "hope" width=2.0 ]; 
+150[label = "otak" width=2.0 ]; 
+151[label = "ajo" width=2.0 ]; 
+152[label = "aro" width=2.0 ]; 
+153[label = "ball" width=2.0 ]; 
+154[label = "can" width=2.0 ]; 
+155[label = "car" width=2.0 ]; 
+156[label = "oso" width=2.0 ]; 
+157[label = "sal" width=2.0 ]; 
+158[label = "pie" width=2.0 ]; 
+159[label = "pan" width=2.0 ]; 
+160[label = "sed" width=2.0 ]; 
+161[label = "tos" width=2.0 ]; 
+162[label = "luz" width=2.0 ]; 
+163[label = "uva" width=2.0 ]; 
+164[label = "rio" width=2.0 ]; 
+165[label = "feo" width=2.0 ]; 
+166[label = "fea" width=2.0 ]; 
+167[label = "ron" width=2.0 ]; 
+168[label = "cat" width=2.0 ]; 
+169[label = "dog" width=2.0 ]; 
+170[label = "res" width=2.0 ]; 
+0 -> 1[dir = back]; 
+0 -> 1 
+1 -> 2[dir = back]; 
+1 -> 2 
+2 -> 3[dir = back]; 
+2 -> 3 
+3 -> 4[dir = back]; 
+3 -> 4 
+4 -> 5[dir = back]; 
+4 -> 5 
+5 -> 6[dir = back]; 
+5 -> 6 
+6 -> 7[dir = back]; 
+6 -> 7 
+7 -> 8[dir = back]; 
+7 -> 8 
+8 -> 9[dir = back]; 
+8 -> 9 
+9 -> 10[dir = back]; 
+9 -> 10 
+10 -> 11[dir = back]; 
+10 -> 11 
+11 -> 12[dir = back]; 
+11 -> 12 
+12 -> 13[dir = back]; 
+12 -> 13 
+13 -> 14[dir = back]; 
+13 -> 14 
+14 -> 15[dir = back]; 
+14 -> 15 
+15 -> 16[dir = back]; 
+15 -> 16 
+16 -> 17[dir = back]; 
+16 -> 17 
+17 -> 18[dir = back]; 
+17 -> 18 
+18 -> 19[dir = back]; 
+18 -> 19 
+19 -> 20[dir = back]; 
+19 -> 20 
+20 -> 21[dir = back]; 
+20 -> 21 
+21 -> 22[dir = back]; 
+21 -> 22 
+22 -> 23[dir = back]; 
+22 -> 23 
+23 -> 24[dir = back]; 
+23 -> 24 
+24 -> 25[dir = back]; 
+24 -> 25 
+25 -> 26[dir = back]; 
+25 -> 26 
+26 -> 27[dir = back]; 
+26 -> 27 
+27 -> 28[dir = back]; 
+27 -> 28 
+28 -> 29[dir = back]; 
+28 -> 29 
+29 -> 30[dir = back]; 
+29 -> 30 
+30 -> 31[dir = back]; 
+30 -> 31 
+31 -> 32[dir = back]; 
+31 -> 32 
+32 -> 33[dir = back]; 
+32 -> 33 
+33 -> 34[dir = back]; 
+33 -> 34 
+34 -> 35[dir = back]; 
+34 -> 35 
+35 -> 36[dir = back]; 
+35 -> 36 
+36 -> 37[dir = back]; 
+36 -> 37 
+37 -> 38[dir = back]; 
+37 -> 38 
+38 -> 39[dir = back]; 
+38 -> 39 
+39 -> 40[dir = back]; 
+39 -> 40 
+40 -> 41[dir = back]; 
+40 -> 41 
+41 -> 42[dir = back]; 
+41 -> 42 
+42 -> 43[dir = back]; 
+42 -> 43 
+43 -> 44[dir = back]; 
+43 -> 44 
+44 -> 45[dir = back]; 
+44 -> 45 
+45 -> 46[dir = back]; 
+45 -> 46 
+46 -> 47[dir = back]; 
+46 -> 47 
+47 -> 48[dir = back]; 
+47 -> 48 
+48 -> 49[dir = back]; 
+48 -> 49 
+49 -> 50[dir = back]; 
+49 -> 50 
+50 -> 51[dir = back]; 
+50 -> 51 
+51 -> 52[dir = back]; 
+51 -> 52 
+52 -> 53[dir = back]; 
+52 -> 53 
+53 -> 54[dir = back]; 
+53 -> 54 
+54 -> 55[dir = back]; 
+54 -> 55 
+55 -> 56[dir = back]; 
+55 -> 56 
+56 -> 57[dir = back]; 
+56 -> 57 
+57 -> 58[dir = back]; 
+57 -> 58 
+58 -> 59[dir = back]; 
+58 -> 59 
+59 -> 60[dir = back]; 
+59 -> 60 
+60 -> 61[dir = back]; 
+60 -> 61 
+61 -> 62[dir = back]; 
+61 -> 62 
+62 -> 63[dir = back]; 
+62 -> 63 
+63 -> 64[dir = back]; 
+63 -> 64 
+64 -> 65[dir = back]; 
+64 -> 65 
+65 -> 66[dir = back]; 
+65 -> 66 
+66 -> 67[dir = back]; 
+66 -> 67 
+67 -> 68[dir = back]; 
+67 -> 68 
+68 -> 69[dir = back]; 
+68 -> 69 
+69 -> 70[dir = back]; 
+69 -> 70 
+70 -> 71[dir = back]; 
+70 -> 71 
+71 -> 72[dir = back]; 
+71 -> 72 
+72 -> 73[dir = back]; 
+72 -> 73 
+73 -> 74[dir = back]; 
+73 -> 74 
+74 -> 75[dir = back]; 
+74 -> 75 
+75 -> 76[dir = back]; 
+75 -> 76 
+76 -> 77[dir = back]; 
+76 -> 77 
+77 -> 78[dir = back]; 
+77 -> 78 
+78 -> 79[dir = back]; 
+78 -> 79 
+79 -> 80[dir = back]; 
+79 -> 80 
+80 -> 81[dir = back]; 
+80 -> 81 
+81 -> 82[dir = back]; 
+81 -> 82 
+82 -> 83[dir = back]; 
+82 -> 83 
+83 -> 84[dir = back]; 
+83 -> 84 
+84 -> 85[dir = back]; 
+84 -> 85 
+85 -> 86[dir = back]; 
+85 -> 86 
+86 -> 87[dir = back]; 
+86 -> 87 
+87 -> 88[dir = back]; 
+87 -> 88 
+88 -> 89[dir = back]; 
+88 -> 89 
+89 -> 90[dir = back]; 
+89 -> 90 
+90 -> 91[dir = back]; 
+90 -> 91 
+91 -> 92[dir = back]; 
+91 -> 92 
+92 -> 93[dir = back]; 
+92 -> 93 
+93 -> 94[dir = back]; 
+93 -> 94 
+94 -> 95[dir = back]; 
+94 -> 95 
+95 -> 96[dir = back]; 
+95 -> 96 
+96 -> 97[dir = back]; 
+96 -> 97 
+97 -> 98[dir = back]; 
+97 -> 98 
+98 -> 99[dir = back]; 
+98 -> 99 
+99 -> 100[dir = back]; 
+99 -> 100 
+100 -> 101[dir = back]; 
+100 -> 101 
+101 -> 102[dir = back]; 
+101 -> 102 
+102 -> 103[dir = back]; 
+102 -> 103 
+103 -> 104[dir = back]; 
+103 -> 104 
+104 -> 105[dir = back]; 
+104 -> 105 
+105 -> 106[dir = back]; 
+105 -> 106 
+106 -> 107[dir = back]; 
+106 -> 107 
+107 -> 108[dir = back]; 
+107 -> 108 
+108 -> 109[dir = back]; 
+108 -> 109 
+109 -> 110[dir = back]; 
+109 -> 110 
+110 -> 111[dir = back]; 
+110 -> 111 
+111 -> 112[dir = back]; 
+111 -> 112 
+112 -> 113[dir = back]; 
+112 -> 113 
+113 -> 114[dir = back]; 
+113 -> 114 
+114 -> 115[dir = back]; 
+114 -> 115 
+115 -> 116[dir = back]; 
+115 -> 116 
+116 -> 117[dir = back]; 
+116 -> 117 
+117 -> 118[dir = back]; 
+117 -> 118 
+118 -> 119[dir = back]; 
+118 -> 119 
+119 -> 120[dir = back]; 
+119 -> 120 
+120 -> 121[dir = back]; 
+120 -> 121 
+121 -> 122[dir = back]; 
+121 -> 122 
+122 -> 123[dir = back]; 
+122 -> 123 
+123 -> 124[dir = back]; 
+123 -> 124 
+124 -> 125[dir = back]; 
+124 -> 125 
+125 -> 126[dir = back]; 
+125 -> 126 
+126 -> 127[dir = back]; 
+126 -> 127 
+127 -> 128[dir = back]; 
+127 -> 128 
+128 -> 129[dir = back]; 
+128 -> 129 
+129 -> 130[dir = back]; 
+129 -> 130 
+130 -> 131[dir = back]; 
+130 -> 131 
+131 -> 132[dir = back]; 
+131 -> 132 
+132 -> 133[dir = back]; 
+132 -> 133 
+133 -> 134[dir = back]; 
+133 -> 134 
+134 -> 135[dir = back]; 
+134 -> 135 
+135 -> 136[dir = back]; 
+135 -> 136 
+136 -> 137[dir = back]; 
+136 -> 137 
+137 -> 138[dir = back]; 
+137 -> 138 
+138 -> 139[dir = back]; 
+138 -> 139 
+139 -> 140[dir = back]; 
+139 -> 140 
+140 -> 141[dir = back]; 
+140 -> 141 
+141 -> 142[dir = back]; 
+141 -> 142 
+142 -> 143[dir = back]; 
+142 -> 143 
+143 -> 144[dir = back]; 
+143 -> 144 
+144 -> 145[dir = back]; 
+144 -> 145 
+145 -> 146[dir = back]; 
+145 -> 146 
+146 -> 147[dir = back]; 
+146 -> 147 
+147 -> 148[dir = back]; 
+147 -> 148 
+148 -> 149[dir = back]; 
+148 -> 149 
+149 -> 150[dir = back]; 
+149 -> 150 
+150 -> 151[dir = back]; 
+150 -> 151 
+151 -> 152[dir = back]; 
+151 -> 152 
+152 -> 153[dir = back]; 
+152 -> 153 
+153 -> 154[dir = back]; 
+153 -> 154 
+154 -> 155[dir = back]; 
+154 -> 155 
+155 -> 156[dir = back]; 
+155 -> 156 
+156 -> 157[dir = back]; 
+156 -> 157 
+157 -> 158[dir = back]; 
+157 -> 158 
+158 -> 159[dir = back]; 
+158 -> 159 
+159 -> 160[dir = back]; 
+159 -> 160 
+160 -> 161[dir = back]; 
+160 -> 161 
+161 -> 162[dir = back]; 
+161 -> 162 
+162 -> 163[dir = back]; 
+162 -> 163 
+163 -> 164[dir = back]; 
+163 -> 164 
+164 -> 165[dir = back]; 
+164 -> 165 
+165 -> 166[dir = back]; 
+165 -> 166 
+166 -> 167[dir = back]; 
+166 -> 167 
+167 -> 168[dir = back]; 
+167 -> 168 
+168 -> 169[dir = back]; 
+168 -> 169 
+169 -> 170[dir = back]; 
+169 -> 170 
+0 -> 170[dir = back]; 
+0 -> 170 
+}

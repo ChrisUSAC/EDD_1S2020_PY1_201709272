@@ -1,0 +1,153 @@
+digraph G{ 
+rankdir=LR 
+node[ shape = box] 
+0[label = "t puntos: 1" width=2.0 ]; 
+1[label = "r puntos: 1" width=2.0 ]; 
+2[label = "t puntos: 1" width=2.0 ]; 
+3[label = "n puntos: 1" width=2.0 ]; 
+4[label = "t puntos: 1" width=2.0 ]; 
+5[label = "e puntos: 1" width=2.0 ]; 
+6[label = "e puntos: 1" width=2.0 ]; 
+7[label = "h puntos: 4" width=2.0 ]; 
+8[label = "c puntos: 3" width=2.0 ]; 
+9[label = "o puntos: 1" width=2.0 ]; 
+10[label = "g puntos: 2" width=2.0 ]; 
+11[label = "t puntos: 1" width=2.0 ]; 
+12[label = "n puntos: 1" width=2.0 ]; 
+13[label = "i puntos: 1" width=2.0 ]; 
+14[label = "n puntos: 1" width=2.0 ]; 
+15[label = "u puntos: 1" width=2.0 ]; 
+16[label = "m puntos: 3" width=2.0 ]; 
+17[label = "a puntos: 1" width=2.0 ]; 
+18[label = "a puntos: 1" width=2.0 ]; 
+19[label = "a puntos: 1" width=2.0 ]; 
+20[label = "c puntos: 3" width=2.0 ]; 
+21[label = "s puntos: 1" width=2.0 ]; 
+22[label = "h puntos: 4" width=2.0 ]; 
+23[label = "o puntos: 1" width=2.0 ]; 
+24[label = "d puntos: 2" width=2.0 ]; 
+25[label = "l puntos: 1" width=2.0 ]; 
+26[label = "e puntos: 1" width=2.0 ]; 
+27[label = "i puntos: 1" width=2.0 ]; 
+28[label = "d puntos: 2" width=2.0 ]; 
+29[label = "a puntos: 1" width=2.0 ]; 
+30[label = "u puntos: 1" width=2.0 ]; 
+31[label = "o puntos: 1" width=2.0 ]; 
+32[label = "u puntos: 1" width=2.0 ]; 
+33[label = "n puntos: 1" width=2.0 ]; 
+34[label = "e puntos: 1" width=2.0 ]; 
+35[label = "r puntos: 1" width=2.0 ]; 
+36[label = "i puntos: 1" width=2.0 ]; 
+37[label = "o puntos: 1" width=2.0 ]; 
+38[label = "d puntos: 2" width=2.0 ]; 
+39[label = "p puntos: 3" width=2.0 ]; 
+40[label = "e puntos: 1" width=2.0 ]; 
+41[label = "s puntos: 1" width=2.0 ]; 
+42[label = "a puntos: 1" width=2.0 ]; 
+43[label = "o puntos: 1" width=2.0 ]; 
+44[label = "b puntos: 3" width=2.0 ]; 
+45[label = "a puntos: 1" width=2.0 ]; 
+46[label = "o puntos: 1" width=2.0 ]; 
+47[label = "e puntos: 1" width=2.0 ]; 
+48[label = "s puntos: 1" width=2.0 ]; 
+49[label = "e puntos: 1" width=2.0 ]; 
+50[label = "o puntos: 1" width=2.0 ]; 
+51[label = "c puntos: 3" width=2.0 ]; 
+52[label = "u puntos: 1" width=2.0 ]; 
+53[label = "s puntos: 1" width=2.0 ]; 
+54[label = "l puntos: 1" width=2.0 ]; 
+55[label = "a puntos: 1" width=2.0 ]; 
+56[label = "c puntos: 3" width=2.0 ]; 
+57[label = "r puntos: 1" width=2.0 ]; 
+58[label = "ñ puntos: 8" width=2.0 ]; 
+59[label = "x puntos: 8" width=2.0 ]; 
+60[label = "p puntos: 3" width=2.0 ]; 
+61[label = "j puntos: 8" width=2.0 ]; 
+62[label = "z puntos: 10" width=2.0 ]; 
+63[label = "e puntos: 1" width=2.0 ]; 
+64[label = "d puntos: 2" width=2.0 ]; 
+65[label = "g puntos: 2" width=2.0 ]; 
+66[label = "q puntos: 5" width=2.0 ]; 
+67[label = "e puntos: 1" width=2.0 ]; 
+68[label = "r puntos: 1" width=2.0 ]; 
+69[label = "a puntos: 1" width=2.0 ]; 
+70[label = "e puntos: 1" width=2.0 ]; 
+71[label = "i puntos: 1" width=2.0 ]; 
+72[label = "b puntos: 3" width=2.0 ]; 
+73[label = "v puntos: 4" width=2.0 ]; 
+74[label = "o puntos: 1" width=2.0 ]; 
+0 -> 1 
+1 -> 2 
+2 -> 3 
+3 -> 4 
+4 -> 5 
+5 -> 6 
+6 -> 7 
+7 -> 8 
+8 -> 9 
+9 -> 10 
+10 -> 11 
+11 -> 12 
+12 -> 13 
+13 -> 14 
+14 -> 15 
+15 -> 16 
+16 -> 17 
+17 -> 18 
+18 -> 19 
+19 -> 20 
+20 -> 21 
+21 -> 22 
+22 -> 23 
+23 -> 24 
+24 -> 25 
+25 -> 26 
+26 -> 27 
+27 -> 28 
+28 -> 29 
+29 -> 30 
+30 -> 31 
+31 -> 32 
+32 -> 33 
+33 -> 34 
+34 -> 35 
+35 -> 36 
+36 -> 37 
+37 -> 38 
+38 -> 39 
+39 -> 40 
+40 -> 41 
+41 -> 42 
+42 -> 43 
+43 -> 44 
+44 -> 45 
+45 -> 46 
+46 -> 47 
+47 -> 48 
+48 -> 49 
+49 -> 50 
+50 -> 51 
+51 -> 52 
+52 -> 53 
+53 -> 54 
+54 -> 55 
+55 -> 56 
+56 -> 57 
+57 -> 58 
+58 -> 59 
+59 -> 60 
+60 -> 61 
+61 -> 62 
+62 -> 63 
+63 -> 64 
+64 -> 65 
+65 -> 66 
+66 -> 67 
+67 -> 68 
+68 -> 69 
+69 -> 70 
+70 -> 71 
+71 -> 72 
+72 -> 73 
+73 -> 74 
+}
